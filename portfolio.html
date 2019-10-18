@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sweeney || Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"> 
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+
+<style>
+
+
+</style>
+
+    <script>
+        //tab switch JS
+        function openTab(evt, tabName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("content-tab");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" is-active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " is-active";
+        }
+
+
+        //set start date and end date to todays date
+        window.addEventListener('load', () => {
+            datePickerId.min = new Date().toISOString().split("T")[0];
+        })
+    </script>
+
+
+  </head>
+  <body>
+
+
+  <section class="section">
+    <div class="container">
+
+      <section class="hero">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">
+              Portfolio
+            </h1>
+            <h2 class="subtitle">
+              Coding, Design and Photography
+            </h2>
+          </div>
+        </div>
+      </section>
+        
+        
+        
+        
+        <div class="columns is-mobile">
+        <div class="column is-full" style="padding-bottom:0px">
+        <div class="tabs is-centered is-small is-fullwidth is-toggle">
+            <ul>
+
+                <li class="tab is-active" onclick="openTab(event, 'coding')">
+                    <a>
+                        <span class="icon is-small"><i class="fas fa-code"></i></span>
+                        <span>Coding</span>
+                    </a>
+                </li>
+                <li class="tab" onclick="openTab(event, 'design')">
+                    <a>
+                        <span class="icon is-small"><i class="fas fa-paint-brush"></i></span>
+                        <span>Design</span>
+                    </a>
+                </li>
+                <li class="tab" onclick="openTab(event, 'photo')">
+                    <a>
+                        <span class="icon is-small"><i class="fas fa-camera"></i></span>
+                        <span>Photo</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        </div>
+            </div>
+            
+
+
+
+
+
+ 
+ 
+ <div class="columns is-mobile content-tab" id="coding" >
+     <div class="column is-full">
+    this is the coding div
+    
+  </div>
+ </div><!-- /content tab --> 
+ 
+ 
+ 
+  <div class="columns is-mobile content-tab" id="design" style="display:none">
+      <div class="column is-full">
+    this is the design div
+    
+  </div>
+ </div><!-- /content tab --> 
+ 
+ 
+ 
+  <div class="columns is-mobile content-tab" id="photo" style="display:none">
+      <div class="column is-full">
+    this is the photo div
+    
+  </div>
+ </div><!-- /content tab --> 
+ 
+ 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+    </div><!-- /container -->
+  </section><!-- /section -->
+
+  </body>
+</html>
