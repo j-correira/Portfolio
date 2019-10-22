@@ -6,25 +6,14 @@
 }
 
 
-
-
-
-.firasFont {
-  font-family: 'Fira Code', monospace;
+.marginBottom5 {
+  margin-bottom: 10px;
 }
-
 
 
 .timeline .timeline-item.is-link::before {
   background-color: #42485C;
 }
-
-
-
-
-
-
-
 
 
 * {
@@ -35,6 +24,10 @@ html {
   font-family: 'Roboto', sans-serif;
   width: 100%;
   min-height: 100%;
+  color:gray;
+
+  /* remove scroll bar? */
+  overflow-x: hidden;
 }
 
 .header-wrapper {
@@ -52,7 +45,6 @@ html {
 }
 
 
-
 /* =================== */
 /* hero text font syle */
 /* =================== */
@@ -60,7 +52,8 @@ html {
   font-family: 'Orbitron', sans-serif;
   font-style:light;
   /* transform: rotate(-5deg); */
-  font-size: 5rem;
+  /* font-size: 3rem; */
+  font-size:50px;
   color: whitesmoke;
 }
 
@@ -71,12 +64,13 @@ html {
 
 .hero .profession {
   padding-top: 50px;
-  font-size: 1.7rem;
-  text-transform: uppercase;
+  font-size: 1.4rem;
+  text-transform: none;
+  font-family: 'Roboto', sans-serif;
 }
 
 .hero .hero-foot {
-  height: 50px;
+  height: 70px;
   background: white;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.082);
 }
@@ -254,7 +248,7 @@ html {
 }
 
 .main-content .section-color.services {
-  padding: 100px;
+  padding: 45px;
   background-color: #43485c;
   color: white;
 }

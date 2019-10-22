@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sweeney || Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"> 
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-extensions@4.0.0/dist/css/bulma-extensions.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bulma-extensions@6.2.7/dist/js/bulma-extensions.min.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ubuntu&display=swap" rel="stylesheet">
+
+<style>
+    
+    .margins235 {
+        margin-right: 235px;
+        margin-left: 235px;
+    }
+
+    .addBorder{
+        border:2px solid gray;
+        border-radius:25px;
+        margin-right: 10px;
+        margin-left: 20px;
+    }
+
+    body{
+        background: #EFF3F4;
+    }
+
+    .paddingTop40 {
+        padding-top: 40px;
+    }
+
+    .card:hover {
+        box-shadow: 0 5px 7px #888888; 
+    }
+    
+    .borderRadius7{
+        border-radius:7px;
+    }
+    
+    html {
+  scroll-behavior: smooth;
+    }
+    
+    .techFont {
+        font-family: 'Source Code Pro', monospace;
+    }
+    
+    .techFont2 {
+        font-family: 'Roboto Slab', serif;
+    }
+    
+    .marginBottom7 {
+            margin-bottom: 7px;
+    }
+
+</style>
+
+    <script>
+        //tab switch JS
+        function openTab(evt, tabName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("content-tab");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" is-active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " is-active";
+        }
+
+
+        //set start date and end date to todays date
+        window.addEventListener('load', () => {
+            datePickerId.min = new Date().toISOString().split("T")[0];
+        })
+        
+        
+    </script>
+
+
+  </head>
+  <body>
+      
+
+  <nav class="navbar is-link is-fixed-top">
+    <div class="navbar-brand">
+      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div id="navbarExampleTransparentExample" class="navbar-menu burger" style="background-color:#567259;">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#about">
+          <span class="icon">
+            <i class="fas fa-info"></i>
+          </span>
+          <span>About</span>
+        </a>
+        <a class="navbar-item" href="#services">
+          <span class="icon">
+            <i class="fas fa-bars"></i>
+          </span>
+          <span>Services</span>
+        </a>
+        <a class="navbar-item" href="#resume">
+          <span class="icon">
+            <i class="fas fa-file-alt"></i>
+          </span>
+          <span>Resume</span>
+        </a>
+        <a class="navbar-item" href="#portfolio">
+          <span class="icon">
+            <i class="fas fa-th-list"></i>
+          </span>
+          <span>Portfolio</span>
+        </a>
+        <a class="navbar-item" href="#contact">
+          <span class="icon">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span>Contact</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+      <script>
+      (function() {
+  var burger = document.querySelector('.burger');
+  var nav = document.querySelector('#'+burger.dataset.target);
+ 
+  burger.addEventListener('click', function(){
+    burger.classList.toggle('is-active');
+    nav.classList.toggle('is-active');
+  });
+})();
+</script>
+
+
+
+<section class="section">
+    
+        
+        
+
+      <section class="hero">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">
+              Sweeney Correira
+            </h1>
+            <h2 class="subtitle">
+              Fullstack Developer and Photographer
+            </h2>
+              
+          </div>
+        </div>
+      </section>
+        
+        
+
+    <div class="container">
+                <div class="columns is-desktop has-text-centered">
+
+                    <div class="column" style="">
+                        <a href="#about">
+                            
+                            <div class="card is-shady borderRadius7">               
+                                <div class="card-image has-text-centered paddingTop40">
+                                    <i class="fas fa-info fa-3x" style="color:#3273dc;"></i>
+                                </div>
+                                <div class="card-content">
+                                    <div class="content">
+                                        <h4>About</h4>
+                                        <p></p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+
+                    </div>
+
+                    <div class="column">
+                        <a href="#services">
+                            <div class="card is-shady borderRadius7">               
+                                <div class="card-image has-text-centered paddingTop40">
+                                    <i class="fas fa-bars fa-3x" style="color:#3273dc;"></i>
+                                </div>
+                                <div class="card-content">
+                                    <div class="content">
+                                        <h4>Services</h4>
+                                        <p></p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="column">
+                        <a href="#resume">
+                            <div class="card is-shady borderRadius7">               
+                                <div class="card-image has-text-centered paddingTop40">
+                                    <i class="fas fa-file-alt fa-3x" style="color:#3273dc;"></i>
+                                </div>
+                                <div class="card-content">
+                                    <div class="content">
+                                        <h4>Resume</h4>
+                                        <p></p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="column">
+                        <a href="#portfolio">
+                            <div class="card is-shady borderRadius7">               
+                                <div class="card-image has-text-centered paddingTop40">
+                                    <i class="fas fa-th-list fa-3x" style="color:#3273dc;"></i>
+                                </div>
+                                <div class="card-content">
+                                    <div class="content">
+                                        <h4>Portfolio</h4>
+                                        <p></p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+        
+        
+        </div><!-- /container -->
+                </section>
+                
+
+                
+                
+                
+                <!-- ////////////////////////////  -->
+                <!-- ///////// portfolio ///////// -->
+                <!-- ////////////////////////////  -->
+                
+                <div id="portfolio">
+                    <section class="hero is-fullwidth is-info" style="background-color:#567259;">
+                        <div class="hero-body">
+                            <div class="container">
+
+                                <h1 class="title">Portfolio</h1>
+
+                                <h2 class="subtitle">
+                                    A collection of my favorite projects that I've worked on.
+                                </h2>
+
+                            </div>
+                        </div>
+                    </section>
+                </div><!-- /portfolio div -->
+
+                        <br>
+                        
+                    
+                <section class="section">
+    
+        
+        
+
+      <section class="hero">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">
+              Sweeney Correira
+            </h1>
+            <h2 class="subtitle">
+              Fullstack Developer and Photographer
+            </h2>
+              
+          </div>
+        </div>
+      </section>
+        
+        
+
+    <div class="container">
+                <div class="columns is-desktop has-text-centered">
+
+                    <div class="column" style="">
+                        <a href="#about">
+                            
+                            <div class="card is-shady borderRadius7">               
+                                <div class="card-image has-text-centered paddingTop40">
+                                    <i class="fas fa-info fa-3x" style="color:#3273dc;"></i>
+                                </div>
+                                <div class="card-content">
+                                    <div class="content">
+                                        <h4>About</h4>
+                                        <p></p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+
+                    </div>
+
+                    <div class="column">
+                        <a href="#services">
+                            <div class="card is-shady borderRadius7">               
+                                <div class="card-image has-text-centered paddingTop40">
+                                    <i class="fas fa-bars fa-3x" style="color:#3273dc;"></i>
+                                </div>
+                                <div class="card-content">
+                                    <div class="content">
+                                        <h4>Services</h4>
+                                        <p></p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="column">
+                        <a href="#resume">
+                            <div class="card is-shady borderRadius7">               
+                                <div class="card-image has-text-centered paddingTop40">
+                                    <i class="fas fa-file-alt fa-3x" style="color:#3273dc;"></i>
+                                </div>
+                                <div class="card-content">
+                                    <div class="content">
+                                        <h4>Resume</h4>
+                                        <p></p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="column">
+                        <a href="#portfolio">
+                            <div class="card is-shady borderRadius7">               
+                                <div class="card-image has-text-centered paddingTop40">
+                                    <i class="fas fa-th-list fa-3x" style="color:#3273dc;"></i>
+                                </div>
+                                <div class="card-content">
+                                    <div class="content">
+                                        <h4>Portfolio</h4>
+                                        <p></p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+        
+        
+        </div><!-- /container -->
+                </section>
+                
+                
+                
+                <!-- /////////////////////////////////////// -->
+                <!-- //////// /portfolio //////// -->
+                <!-- /////////////////////////////////////// -->
+                
+                
+                
+                
+                
+                
+                
+                <!-- /////////////////////////////////////// -->
+                <!-- //////////////// about //////////////// -->
+                <!-- /////////////////////////////////////// -->
+                <div id="about">
+              
+                    <section class="hero is-fullwidth is-info" style="background-color:#3273dc;">
+                        <div class="hero-body">
+                            <div class="container">
+
+                                <h1 class="title">About</h1>
+
+                                <h2 class="subtitle">
+                                    I'm a dynamic IT professional who is deeply passionate about software engineering and graphic design. I have 
+                                    a creative outlook on problem solving coupled with a lifelong desire to learn and absorb information. I possess 
+                                    strong communication skills which helps me to collaborate well with colleagues at all levels of the organization. 
+                                </h2>
+                                <br>
+                                <br>
+                                <a class="button is-primary">View Full Resume</a>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    
+
+        <section class="section" style="padding-top: 0px;">
+            <div class="container">
+
+
+                <div class="columns is-mobile">
+                    <div class="column is-full" style="padding-bottom:0px">
+
+
+
+                        <div class="timeline">
+                            <header class="timeline-header">
+                            </header>
+
+
+                            <div class="timeline-item is-link">
+                                <div class="timeline-marker is-link"></div>
+                                <div class="timeline-content">
+                                    <p class="heading"><b>March 2015</b></p>
+                                    <p>Graduated from New England Institute of Technology with an Associate's Degree in 'Graphics, Multimedia and Web Design'
+                                        <br>
+                                        <br>
+                                        • Dean's list several times      
+                                        <br>
+                                        • 3.2 GPA
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div class="timeline-item is-link">
+                                <div class="timeline-marker is-link"></div>
+                                <div class="timeline-content">
+                                    <p class="heading"><b>April 2015</b></p>
+                                    <p>Founded multimedia company 'Sweeney C. Multimedia'
+                                        Provides professional quality web design, branding and photography
+                                        <br>
+                                        <br>
+                                        <a class="button is-primary">View Portfolio</a>
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div class="timeline-item is-link">
+                                <div class="timeline-marker is-link"></div>
+                                <div class="timeline-content">
+                                    <p class="heading"><b>June - October 2016</b></p>
+                                    <p>Published multiple times in internationally distributed magazine 'Thrasher Magazine'
+
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div class="timeline-item is-link">
+                                <div class="timeline-marker is-link"></div>
+                                <div class="timeline-content">
+                                    <p class="heading"><b>June - September 2019</b></p>
+                                    <p>Summer Intern at Pfizer (Data Support Technician)
+                                        <br>
+                                        <br>
+                                        Conceptualized and developed a dynamic web app to generate bar codes to be placed on plates for the 
+                                        purpose of identifying compounds. Created an admin log in to safeguard the 
+                                        information and also migrated data from an Excel spreadsheet to an Access database
+                                        <br>
+                                        <br>
+                                        <a class="button is-primary">View Poster Detailing Project</a>
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div class="timeline-item is-link">
+                                <div class="timeline-marker is-link"></div>
+                                <div class="timeline-content">
+                                    <p class="heading"><b>September 2019</b></p>
+                                    <p>Graduated from New England Institute of Technology with an Associate's Degree in 'Software Engineering'
+                                        <br>
+                                        <br>
+                                        • Recipient of 'William R. Talladay Scholarship'
+                                        <br>
+                                        • Dean's list several times      
+                                        <br>
+                                        • 3.3 GPA
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div class="timeline-item is-link">
+                                <div class="timeline-marker is-link"></div>
+                                <div class="timeline-content">
+                                    <p class="heading"><b>October 2019</b></p>
+                                    <p>Developed 'Pickup-Shift' a mobile web application that simplifies staffing in the restaurant industry
+                                        <br>
+                                        <br>
+                                        • Allows workers to specify their skills and pickup additional shifts at their convenience
+                                        <br>
+                                        • Provides restaurants with a searchable index of workers and their availability     
+                                        <br>
+                                        <br>
+                                        <a class="button is-primary">View Pickup-Shift Site</a>
+                                    </p>
+                                </div>
+                            </div>
+
+
+
+          
+                                      <div class="timeline-item is-link">
+                                <div class="timeline-marker is-link"></div>
+                                <div class="timeline-content">
+                                    <p class="heading"><b>The Future</b></p>
+                                    <p>Currently looking for an opportunity to be involved in an organization that believes in working on the cutting edge of technology and creating powerful, innovative products.
+                                    <br>
+                                    <br>
+                                    <a class="button is-primary">View full resume</a>
+                                    
+                                    <a class="button is-primary">Contact me</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <header class="timeline-header">
+                                <!-- <span class="tag is-large is-rounded is-link">To be continued...</span> -->
+                            </header>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                </div>
+
+            </div><!-- /container -->
+        
+                
+        <!-- /////////////////////////////////////// -->
+        <!-- /////////////// /about /////////////// -->
+        <!-- /////////////////////////////////////// -->
+
+                
+                
+                
+                
+                
+            
+            
+            
+            
+            
+                <!-- Begin Footer -->
+    <div class="footer" style="background-color:gray;">
+      <p>
+        <strong class="white">Bulma</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>.
+        The source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content is licensed
+        <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+      </p>
+    </div>
+    <!-- End Footer -->
+
+  </body>
+</html>
