@@ -43,6 +43,17 @@
     font-size:55px;
   }
 
+.navbar-brand, .navbar
+{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#mobile-nav{
+  margin-top: 53px;
+}
+
 
 }
 
@@ -67,6 +78,17 @@ display: none;
 /* /////////////////////////////////////////////////////////////// */
 </style>
 
+
+<script>
+
+function removeClass() {
+  var element = document.getElementById("mobile-nav");
+  element.classList.toggle("is-active");
+}
+
+</script>
+
+
     
   </head>
 
@@ -81,11 +103,14 @@ display: none;
     <!-- End Preloader-->
     <!-- Begin Scroll Up Button -->
 
-    <form action="#toptop">
-      <button id="toTop" title="Go to top">
-        <i class="fas fa-angle-up"></i>
-      </button>
-    </form>
+    <!-- 
+      <a href="#toptop">
+        <button id="toTop" title="Go to top">
+          <i class="fas fa-angle-up"></i>
+        </button>
+      </a>
+    -->
+    
     <!-- End Scroll Up Button -->
 
     <!-- Begin Header -->
@@ -93,9 +118,9 @@ display: none;
       <!-- Begin Hero -->
       <section class="hero is-large">
         <!-- Begin Mobile Nav -->
-        <nav class="navbar is-transparent is-hidden-desktop">
+        <nav class="navbar is-transparent is-hidden-desktop sticky">
           <!-- Begin Burger Menu -->
-          <div class="navbar-brand" style="background-color: rgba(255, 255, 255, 0.8);">
+          <div class="navbar-brand sticky" style="background-color: rgba(74, 74, 74, 0.45);">
             <div class="navbar-burger burger"  data-target="mobile-nav">
               <span></span>
               <span></span>
@@ -103,35 +128,35 @@ display: none;
             </div>
           </div>
           <!-- End Burger Menu -->
-          <div id="mobile-nav" class="navbar-menu">
+          <div id="mobile-nav" class="navbar-menu" >
             <div class="navbar-end">
               <div class="navbar-item">
-                <a class="navbar-item" href="#home">
+                <a onclick="removeClass();" class="navbar-item" href="#home">
                   Home
                 </a>
               </div>
               <div class="navbar-item">
-                <a class="navbar-item" href="#about">
+                <a onclick="removeClass();" class="navbar-item" href="#about">
                   About
                 </a>
               </div>
               <div class="navbar-item">
-                <a class="navbar-item" href="#resume">
+                <a onclick="removeClass();" class="navbar-item" href="#resume">
                   Resume
                 </a>
               </div>
               <div class="navbar-item">
-                <a class="navbar-item" href="#skills">
+                <a onclick="removeClass();" class="navbar-item" href="#skills">
                   Skills
                 </a>
               </div>
               <div class="navbar-item">
-                <a class="navbar-item" href="#portfolio">
+                <a onclick="removeClass();" class="navbar-item" href="#portfolio">
                   Portfolio
                 </a>
               </div>
               <div class="navbar-item">
-                <a class="navbar-item" href="#contact">
+                <a onclick="removeClass();" class="navbar-item" href="#contact">
                   Contact
                 </a>
               </div>
@@ -190,7 +215,7 @@ display: none;
       <!-- Begin About Me Section -->
       <div class="section-light about-me" id="about">
         <div class="container">
-          <div class="column is-12 about-me">
+          <div class="column is-12 about-me" style="">
             <h1 class="title has-text-centered section-title">About</h1>
           </div>
           <div class="columns is-multiline">
@@ -224,7 +249,7 @@ display: none;
             <!-- ////////////////////////////////////// -->
             <!-- ///////////// Timeline /////////////// -->
             <!-- ////////////////////////////////////// -->
-            <div class="column is-fullwidth" style="" data-aos="fade-in">
+            <div class="column is-fullwidth" data-aos="fade-in">
 
                 <div class="timeline" >
                     <header class="timeline-header"></header>
@@ -233,7 +258,7 @@ display: none;
                     <div class="timeline-item is-dark">
                         <div class="timeline-marker is-dark"></div>
                         <div class="timeline-content">
-                            <p class="heading"><b>March 2015</b></p>
+                            <p><b>March 2015</b></p>
                             <p>Graduated from New England Institute of Technology with an Associate's Degree in 'Graphics, Multimedia and Web Design'
                                 <br>
                                 <br>
@@ -248,12 +273,12 @@ display: none;
                     <div class="timeline-item is-dark">
                         <div class="timeline-marker is-dark"></div>
                         <div class="timeline-content">
-                            <p class="heading"><b>April 2015</b></p>
+                            <p><b>April 2015</b></p>
                             <p>Founded multimedia company 'Sweeney C. Multimedia'
                                 Provides professional quality web design, branding and photography
                                 <br>
                                 <br>
-                                <a class="button marginBottom5" style="background-color:#4a4a4a; color:white;">View Portfolio</a>
+                                <a class="button is-medium marginBottom5" style="background-color:#4a4a4a; color:white;">View Portfolio</a>
                             </p>
                         </div>
                     </div>
@@ -262,7 +287,7 @@ display: none;
                     <div class="timeline-item is-dark">
                         <div class="timeline-marker is-dark"></div>
                         <div class="timeline-content">
-                            <p class="heading"><b>June - October 2016</b></p>
+                            <p><b>June - October 2016</b></p>
                             <p>Published multiple times in internationally distributed 'Thrasher Magazine'
 
                             </p>
@@ -273,7 +298,7 @@ display: none;
                     <div class="timeline-item is-dark">
                         <div class="timeline-marker is-dark"></div>
                         <div class="timeline-content">
-                            <p class="heading"><b>June - September 2019</b></p>
+                            <p><b>June - September 2019</b></p>
                             <p>Summer Intern at Pfizer (Data Support Technician)
                                 <br>
                                 <br>
@@ -282,7 +307,7 @@ display: none;
                                 information and also migrated data from an Excel spreadsheet to an Access database
                                 <br>
                                 <br>
-                                <a class="button marginBottom5" style="background-color:#4a4a4a; color:white;">View Poster Detailing Project</a>
+                                <a href="pfizer_poster.html" class="button is-medium marginBottom5" style="background-color:#4a4a4a; color:white;">View Project Poster</a>
                             </p>
                         </div>
                     </div>
@@ -291,7 +316,7 @@ display: none;
                     <div class="timeline-item is-dark">
                         <div class="timeline-marker is-dark"></div>
                         <div class="timeline-content">
-                            <p class="heading"><b>March 2019</b></p>
+                            <p><b>March 2019</b></p>
                             <p>Developed 'Skate Index' a mobile web application that allows users to add and search for skateparks in New England
                                 <br>
                                 <br>
@@ -300,8 +325,8 @@ display: none;
                                 • Users can submit new skateparks to be added to the index     
                                 <br>
                                 <br>
-                                <a href="#" class="button marginBottom5" style="background-color:#4a4a4a; color:white;">View Skate Index Site</a>
-                                <a href="#" class="button marginBottom5" style="background-color:#4a4a4a; color:white;">View Skate Index Github</a>
+                                <!-- <a href="#" class="button is-medium marginBottom5" style="background-color:#4a4a4a; color:white;">View Skate Index</a> -->
+                                <a href="https://github.com/j-correira/C-Sharp-ASP.NET/tree/master/SkateIndex" class="button is-medium marginBottom5" style="background-color:#4a4a4a; color:white;">View Project Github</a>
                             </p>
                         </div>
                     </div>
@@ -310,7 +335,7 @@ display: none;
                     <div class="timeline-item is-dark">
                         <div class="timeline-marker is-dark"></div>
                         <div class="timeline-content">
-                            <p class="heading"><b>September 2019</b></p>
+                            <p><b>September 2019</b></p>
                             <p>Graduated from New England Institute of Technology with an Associate's Degree in 'Software Engineering'
                                 <br>
                                 <br>
@@ -327,7 +352,7 @@ display: none;
                     <div class="timeline-item is-dark">
                         <div class="timeline-marker is-dark"></div>
                         <div class="timeline-content">
-                            <p class="heading"><b>October 2019</b></p>
+                            <p><b>October 2019</b></p>
                             <p>Developed 'Pickup-Shift' a mobile web application that simplifies staffing in the restaurant industry
                                 <br>
                                 <br>
@@ -336,8 +361,8 @@ display: none;
                                 • Provides restaurants with a searchable index of workers and their availability     
                                 <br>
                                 <br>
-                                <a href="#" class="button marginBottom5" style="background-color:#4a4a4a; color:white;">View Pickup-Shift Site</a>
-                                <a href="#" class="button marginBottom5" style="background-color:#4a4a4a; color:white;">View Pickup-Shift Github</a>
+                                <a href="http://ict.neit.edu/001248229/pickup-shift_Presentation/fullScreen.html" class="button is-medium marginBottom5" style="background-color:#4a4a4a; color:white;">View Pickup-Shift</a>
+                                <a href="http://ict.neit.edu/001248229/Capstone/capstone_status.html" class="button is-medium marginBottom5" style="background-color:#4a4a4a; color:white;">View Project Document</a>
                             </p>
                         </div>
                     </div>
@@ -348,12 +373,12 @@ display: none;
                     <div class="timeline-item is-dark">
                         <div class="timeline-marker is-dark"></div>
                         <div class="timeline-content">
-                            <p class="heading"><b>The Future</b></p>
+                            <p><b>The Future</b></p>
                             <p>Currently looking for an opportunity to be involved in an organization that believes in working on the cutting edge of technology and creating powerful, innovative products.
                                 <br>
                                 <br>
-                                <a href="#resume" class="button marginBottom5" style="background-color:#4a4a4a; color:white;">View Full Resume</a>
-                                <a href="#contact" class="button marginBottom5" style="background-color:#4a4a4a; color:white;">Contact me</a>
+                                <a href="#resume" class="button is-medium marginBottom5" style="background-color:#4a4a4a; color:white;">View Full Resume</a>
+                                <a href="#contact" class="button is-medium marginBottom5" style="background-color:#4a4a4a; color:white;">Contact</a>
                             </p>
                         </div>
                     </div>
@@ -386,7 +411,7 @@ display: none;
             </div>
             <div class="column is-10 has-text-centered is-offset-1">
               
-              <a href="resume.html" class="button" style="background-color:#4a4a4a; color:white; font-size:22px">View My Resume&emsp;<i class="fas fa-file"></i></a>
+              <a href="resume.html" class="button is-medium" style="background-color:#4a4a4a; color:white; font-size:22px">View My Resume&emsp;<i class="fas fa-file"></i></a>
               
             </div>
           </div>
@@ -424,7 +449,12 @@ display: none;
                 <h2>
                   Web and desktop app development, database management and Server configuration
                 </h2>
+                <a href="#"><button style="margin-top: 15px;" class="button is-medium is-fullwidth">Coding Portfolio</button></a>
               </div>
+
+              
+
+              <br>
               <br>
                 
               <div
@@ -437,7 +467,12 @@ display: none;
                 <h2>
                   Responsive frontend web design, logo design and brand consultation
                 </h2>
+                <a href="#"><button style="margin-top: 15px;" class="button marginTop10 is-medium is-fullwidth">Design Portfolio</button></a>
               </div>
+
+              
+
+              <br>
               <br>
               
               <div
@@ -450,7 +485,11 @@ display: none;
                 <h2>
                   Action sports, live music, weddings, parties and any other special event
                 </h2>
+                <a href="#"><button style="margin-top: 15px;" class="button marginTop10 is-medium is-fullwidth">Photography Portfolio</button></a>
               </div>
+
+              
+
               
             </div>            
           </div>
@@ -464,7 +503,7 @@ display: none;
   <div class="container">
     <div class="columns is-multiline">
       <div class="column is-12 about-me">
-        <h1 class="title has-text-centered section-title">Programming Languages</h1>
+        <h1 class="title has-text-centered section-title">Language Experience</h1>
       </div>
       <div
         class="column is-6"
@@ -472,11 +511,11 @@ display: none;
         data-aos-easing="linear"
       >
         <h1>HTML/CSS</h1>
-        <progress class="progress" value="95" max="100">30%</progress>
+        <progress class="progress" value="95" max="100">95%</progress>
         <h1>Javascript</h1>
-        <progress class="progress" value="80" max="100">30%</progress>
+        <progress class="progress" value="85" max="100">85%</progress>
         <h1>PHP</h1>
-        <progress class="progress" value="85" max="100">45%</progress>
+        <progress class="progress" value="90" max="100">85%</progress>
       </div>
       <div
         class="column is-6"
@@ -484,11 +523,11 @@ display: none;
         data-aos-easing="linear"
       >
         <h1>C#</h1>
-        <progress class="progress" value="80" max="100">60%</progress>
+        <progress class="progress" value="80" max="100">80%</progress>
         <h1>Visual Basic</h1>
-        <progress class="progress" value="95" max="100">30%</progress>
-        <h1>Python</h1>
-        <progress class="progress" value="55" max="100">45%</progress>
+        <progress class="progress" value="95" max="100">95%</progress>
+        <h1>SQL</h1>
+        <progress class="progress" value="85" max="100">85%</progress>
       </div>
     </div>
 
@@ -520,70 +559,35 @@ display: none;
             <div class="column is-12">
               <h1 class="title has-text-centered section-title">Portfolio</h1>
             </div>
-            <div class="column is-3">
+
+            <div class="column is-4 has-text-centered">
               <a href="#">
                 <figure
                   class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=0');"
+                  style="background-image: url('https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_960_720.jpg');"
                 ></figure>
               </a>
+              <p style="font-size: 1.5rem;"><b>Coding</b></p>
             </div>
-            <div class="column is-3">
+            <div class="column is-4 has-text-centered">
               <a href="#">
                 <figure
                   class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=10');"
+                  style="background-image: url('https://cdn.pixabay.com/photo/2016/11/29/06/15/plans-1867745_960_720.jpg');"
                 ></figure>
               </a>
+              <p style="font-size: 1.5rem;"><b>Design</b></p>
             </div>
-            <div class="column is-3">
+            <div class="column is-4 has-text-centered">
               <a href="#">
                 <figure
                   class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=20');"
+                  style="background-image: url('https://cdn.pixabay.com/photo/2019/05/19/23/48/camera-4215612_960_720.jpg');"
                 ></figure>
               </a>
+              <p style="font-size: 1.5rem;"><b>Photography</p></b>
             </div>
-            <div class="column is-3">
-              <a href="#">
-                <figure
-                  class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=30');"
-                ></figure>
-              </a>
-            </div>
-            <div class="column is-3">
-              <a href="#">
-                <figure
-                  class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=40');"
-                ></figure>
-              </a>
-            </div>
-            <div class="column is-3">
-              <a href="#">
-                <figure
-                  class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=50');"
-                ></figure>
-              </a>
-            </div>
-            <div class="column is-3">
-              <a href="#">
-                <figure
-                  class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=60');"
-                ></figure>
-              </a>
-            </div>
-            <div class="column is-3">
-              <a href="#">
-                <figure
-                  class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=70');"
-                ></figure>
-              </a>
-            </div>
+
           </div>
         </div>
       </div>
@@ -603,7 +607,7 @@ display: none;
             </div>
             <div class="column is-8 is-offset-2">
               <form
-                action=""
+                action="#"
                 method="POST"
               >
                 <div class="field">
@@ -635,6 +639,19 @@ display: none;
                   </div>
                 </div>
                 <div class="field">
+                    <label class="label">Subject</label>
+                    <div class="select is-fullwidth">
+                        <select>
+                          <option disabled selected>Select Subject</option>
+                          <option>Just Saying Hi</option>
+                          <option>Software Development Inquiry</option>
+                          <option>Web Design Inquiry</option>
+                          <option>Graphic Design Inquiry</option>
+                          <option>Photography Inquiry</option>
+                        </select>
+                      </div>
+                  </div>
+                <div class="field">
                   <label class="label">Message</label>
                   <div class="control">
                     <textarea
@@ -644,14 +661,10 @@ display: none;
                     ></textarea>
                   </div>
                 </div>
-                <div class="field">
-                  <div class="control ">
-                    <button class="button submit-button" style="text-transform: none; background-color:#4a4a4a;">
-                      Send Email
-                      
+
+                    <button class="button is-medium" style="text-transform: none; background-color:#4a4a4a;font-size: 1.5rem;">Send Email
                     </button>
-                  </div>
-                </div>
+
               </form>
             </div>
           </div>
@@ -664,8 +677,7 @@ display: none;
     <!-- Begin Footer -->
     <div class="footer">
       <p>
-        Built with 
-        <a href="https://bulma.io/"><strong class="white">Bulma</strong></a>
+        Built with<a href="https://bulma.io/">Bulma</a>
       </p>
     </div>
     <!-- End Footer -->

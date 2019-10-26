@@ -22,6 +22,15 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
+
+
+
+// remove is-active class when a link is clicked in the hamburger menu 
+
+
+
+
+
 // Smooth Anchor Scrolling
 $(document).on("click", 'a[href^="#"]', function(event) {
   event.preventDefault();
