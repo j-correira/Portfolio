@@ -22,11 +22,11 @@ if (!$con) {
 
 
     $sql = "INSERT INTO testINSERT (text)
-VALUES ('yeah?')";
+VALUES ('yeah!!!!!!')";
 
 
     if ($con->query($sql) === TRUE) {
-        echo "New record created successfully";
+        echo "New record added to the database: " . $database . " by the user " . $user;
     } else {
         echo "Error: " . $sql . "<br>" . $con->error;
     }
