@@ -141,6 +141,11 @@ function removeClass() {
                 </a>
               </div>
               <div class="navbar-item">
+                <a onclick="removeClass();" class="navbar-item" href="#recentProjects">
+                  Recent Projects
+                </a>
+              </div>
+              <div class="navbar-item">
                 <a onclick="removeClass();" class="navbar-item" href="#resume">
                   Resume
                 </a>
@@ -169,7 +174,7 @@ function removeClass() {
           <div class="container has-text-centered">
             <h1 class="subtitle"></h1>
             <h2 class="title is-marginless">Sweeney Correira</h2>
-            <h1 class="subtitle profession ">Software Engineer<br>Photographer<br>Designer</h1>
+            <h1 class="subtitle profession" style="font-size: 1.7em;">Software Engineer<br>Graphic Designer<br>Photographer</h1>
 
 
           </div>
@@ -188,13 +193,13 @@ function removeClass() {
                     <a href="#about">About</a>
                   </li>
                   <li>
+                    <a href="#recentProjects">Recent Projects</a>
+                  </li>
+                  <li>
                     <a href="#resume">Resume</a>
                   </li>
                   <li>
                     <a href="#skills">Skills</a>
-                  </li>
-                  <li>
-                    <a href="#recentProjects">Recent Projects</a>
                   </li>
                   <li>
                     <a href="#contact">Contact</a>
@@ -306,12 +311,17 @@ function removeClass() {
                             <p>Summer Intern at Pfizer (Data Support Technician)
                                 <br>
                                 <br>
-                                Conceptualized and developed a dynamic web app to generate bar codes to be placed on plates for the 
-                                purpose of identifying compounds. Created an admin log in to safeguard the 
-                                information and also migrated data from an Excel spreadsheet to an Access database
+                                Conceptualized and developed a dynamic web app that generates bar codes to be placed on plates for the purpose of identifying compounds
                                 <br>
                                 <br>
-                                <a href="pfizer_poster.html" class="button is-medium marginBottom5" style="background-color:#4a4a4a; color:white;">View Project Poster</a>
+                                • Redesigned user interface
+                                <br>
+                                • Introduced database connectivity
+                                <br>
+                                • Created Admin control panel
+                                <br>
+                                <br>
+                                <a href="pfizer_poster.html" target="_blank" class="button is-medium marginBottom5" style="background-color:#4a4a4a; color:white;">View Project Poster</a>
                             </p>
                         </div>
                     </div>
@@ -330,7 +340,7 @@ function removeClass() {
                                 <br>
                                 <br>
                                 <!-- <a href="#" class="button is-medium marginBottom5" style="background-color:#4a4a4a; color:white;">View Skate Index</a> -->
-                                <a href="https://github.com/j-correira/C-Sharp-ASP.NET/tree/master/SkateIndex" class="button is-medium marginBottom5" style="background-color:#4a4a4a; color:white;">View Project Github</a>
+                                <a href="https://github.com/j-correira/C-Sharp-ASP.NET/tree/master/SkateIndex" class="button is-medium marginBottom5" target="_blank" style="background-color:#4a4a4a; color:white;">View Project Github</a>
                             </p>
                         </div>
                     </div>
@@ -365,8 +375,8 @@ function removeClass() {
                                 • Provides restaurants with a searchable index of workers and their availability     
                                 <br>
                                 <br>
-                                <a href="http://ict.neit.edu/001248229/pickup-shift_Presentation/fullScreen.html" class="button is-medium marginBottom5" style="background-color:#4a4a4a; color:white;">View Pickup-Shift</a>
-                                <a href="http://ict.neit.edu/001248229/Capstone/capstone_status.html" class="button is-medium marginBottom5" style="background-color:#4a4a4a; color:white;">View Project Document</a>
+                                <a href="http://sweeneyc.tech/Pickup-Shift/index.html" class="button is-medium marginBottom5" style="background-color:#4a4a4a; color:white;">View Pickup-Shift</a>
+                                <a href="pickup_shift_doc.html" class="button is-medium marginBottom5" target="_blank" style="background-color:#4a4a4a; color:white;">View Process Document</a>
                             </p>
                         </div>
                     </div>
@@ -416,8 +426,8 @@ function removeClass() {
 
         <div class="card">
           <div class="card-image">
-            <figure class="image is-4by3">
-              <a target="_blank" href="https://blownawaygroton.com"><img src="images/blownaway_card.png" alt="Placeholder image"></a>
+            <figure class="image is-16by9">
+              <a target="_blank" href="http://sweeneyc.tech/Pickup-Shift/index.html"><img src="images/new_pickup_card.png" alt="Placeholder image" style="margin-top: 1px;"></a>
             </figure>
           </div>
           <hr>
@@ -425,24 +435,23 @@ function removeClass() {
             <div class="media">
               <div class="media-left">
                 <figure class="image is-48x48">
-                  <img src="images/blownaway_round.png" alt="Placeholder image">
+                  <img src="images/pickup_round.png" alt="Placeholder image">
                 </figure>
               </div>
               <div class="media-content">
-                <p class="title is-4">Blown Away<br>Glass Gallery</p>
-                <p class="subtitle is-6"><a target="_blank" href="https://blownawaygroton.com">Website</a></p>
+                <p class="title is-4">Pickup-Shift</p>
+                <p class="subtitle is-6"><a target="_blank" href="http://sweeneyc.tech/Pickup-Shift/index.html">Website</a><br><a target="_blank" href="pickup_shift_doc.html">Process Document</a></p>
               </div>
-            </div>
+            </div>      
         
             <div class="content">
-              Local glassblowing and retail space located in Groton, CT.
+              Associate Capstone project developed to connects restaurants with restaurant workers.
               <br>
               <br>
               <div class="tags">
                 <span class="tag">Web Design</span>
-                <span class="tag">Branding</span>
-                <span class="tag">Logo Design</span>
-                <span class="tag">Photography</span>
+                <span class="tag">PHP</span>
+                <span class="tag">MySql</span>
               </div>
             </div>
           </div>
@@ -454,8 +463,8 @@ function removeClass() {
 
         <div class="card">
           <div class="card-image">
-            <figure class="image is-4by3">
-              <a target="_blank" href="http://sweeneyc.tech/IHNE/index.html"><img src="images/ihne_card.png" alt="Placeholder image"></a>
+            <figure class="image is-16by9">
+              <a target="_blank" href="pfizer_poster.html"><img src="images/pfizer_poster_card.png" alt="Placeholder image" style="margin-top: 10px;"></a>
             </figure>
           </div>
           <hr>
@@ -463,23 +472,23 @@ function removeClass() {
             <div class="media">
               <div class="media-left">
                 <figure class="image is-48x48">
-                  <img src="images/ihne_round.png" alt="Placeholder image">
+                  <img src="images/pfizer_round.png" alt="Placeholder image">
                 </figure>
               </div>
               <div class="media-content">
-                <p class="title is-4">I Have No Eyes</p>
-                <p class="subtitle is-6"><a target="_blank" href="http://sweeneyc.tech/IHNE/index.html">Website</a></p>
+                <p class="title is-4">Pfizer Intern Project</p>
+                <p class="subtitle is-6"><a target="_blank" href="pfizer_poster.html">Project Poster</a></p>
               </div>
             </div>
         
             <div class="content">
-              Progressive Metal band from New London, CT.
+              Conceptualized and developed a dynamic web app that generates bar codes to be placed on plates for the purpose of identifying compounds.
               <br>
               <br>
               <div class="tags">
-                <span class="tag">Web Design</span>
-                <span class="tag">Branding</span>
-                <span class="tag">Photography</span>
+                <span class="tag">UI/UX Design</span>
+                <span class="tag">VB.NET</span>
+                <span class="tag">MS Access</span>
               </div>
             </div>
           </div>
@@ -493,14 +502,12 @@ function removeClass() {
     <div class="container">
       <div class="columns is-multiline">
 
-  
-  
         <div class="column is-6">
   
           <div class="card">
             <div class="card-image">
-              <figure class="image is-2by1">
-                <a target="_blank" href="http://ict.neit.edu/001248229/Capstone/capstone_status.html"><img src="images/pickup_card.png" alt="Placeholder image"></a>
+              <figure class="image is-4by3">
+                <a target="_blank" href="https://blownawaygroton.com"><img src="images/blownaway_card.png" alt="Placeholder image"></a>
               </figure>
             </div>
             <hr>
@@ -508,23 +515,23 @@ function removeClass() {
               <div class="media">
                 <div class="media-left">
                   <figure class="image is-48x48">
-                    <img src="images/pickup_round.png" alt="Placeholder image">
+                    <img src="images/blownaway_round.png" alt="Placeholder image">
                   </figure>
                 </div>
                 <div class="media-content">
-                  <p class="title is-4">Pickup-Shift</p>
-                  <p class="subtitle is-6"><a target="_blank" href="http://ict.neit.edu/001248229/Capstone/capstone_status.html">Website</a></p>
+                  <p class="title is-4">Blown Away<br>Glass Gallery</p>
+                  <p class="subtitle is-6"><a target="_blank" href="https://blownawaygroton.com">Website</a></p>
                 </div>
               </div>
           
               <div class="content">
-                Associate Capstone project developed to connects restaurants with restaurant workers.
+                Local glassblowing and retail space located in Groton, CT.
                 <br>
                 <br>
                 <div class="tags">
                   <span class="tag">Web Design</span>
-                  <span class="tag">PHP</span>
-                  <span class="tag">MySql</span>
+                  <span class="tag">Logo Design</span>
+                  <span class="tag">Photography</span>
                 </div>
               </div>
             </div>
@@ -536,8 +543,8 @@ function removeClass() {
   
           <div class="card">
             <div class="card-image">
-              <figure class="image is-2by1">
-                <a target="_blank" href="http://sweeneyc.tech/random_restaurants.html"><img src="images/random_card.png" alt="Placeholder image"></a>
+              <figure class="image is-4by3">
+                <a target="_blank" href="http://sweeneyc.tech/IHNE/index.html"><img src="images/ihne_card.png" alt="Placeholder image"></a>
               </figure>
             </div>
             <hr>
@@ -545,25 +552,23 @@ function removeClass() {
               <div class="media">
                 <div class="media-left">
                   <figure class="image is-48x48">
-                    <img src="images/random_round.png" alt="Placeholder image">
+                    <img src="images/ihne_round.png" alt="Placeholder image">
                   </figure>
                 </div>
                 <div class="media-content">
-                  <p class="title is-4">Random Restaurants</p>
-                  <p class="subtitle is-6"><a target="_blank" href="http://sweeneyc.tech/random_restaurants.html">Website</a></p>
+                  <p class="title is-4">I Have No Eyes</p>
+                  <p class="subtitle is-6"><a target="_blank" href="http://sweeneyc.tech/IHNE/index.html">Website</a></p>
                 </div>
               </div>
           
               <div class="content">
-                Side project to help me and my friends decide where to eat.
-                <br>
-                (Work in progress)
+                Progressive Metal band from New London, CT.
                 <br>
                 <br>
                 <div class="tags">
-                  <span class="tag">Mobile Web Design</span>
-                  <span class="tag">PHP</span>
-                  <span class="tag">MySql</span>
+                  <span class="tag">Web Design</span>
+                  <span class="tag">Branding</span>
+                  <span class="tag">Photography</span>
                 </div>
               </div>
             </div>
@@ -582,6 +587,8 @@ function removeClass() {
 
 
   </div>
+
+</div>
 </div>
 <!-- End Skills Content -->
 
