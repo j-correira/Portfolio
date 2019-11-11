@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Color of Rhythm || Process</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"
+      integrity="sha256-vK3UTo/8wHbaUn+dTQD0X6dzidqc5l7gczvH+Bnowwk="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="color_of_rhythm.css" />
+    <script
+      src="https://kit.fontawesome.com/2828f7885a.js"
+      integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-extensions@4.0.0/dist/css/bulma-extensions.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bulma-extensions@6.2.7/dist/js/bulma-extensions.min.js"></script>
+
+        <link href="https://fonts.googleapis.com/css?family=Fira+Code&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:300,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato|Orbitron|Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+
+
+        <style>
+        
+  
+/* Adjust hero text of on phone */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+
+  .hero .title {
+    font-size:55px;
+  }
+
+.navbar-brand, .navbar
+{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#mobile-nav{
+  margin-top: 53px;
+}
+
+
+}
+
+
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////// remove gaps in mobile //////////////////// */
+/* removes gap on right in mobile safari */
+*{
+    box-sizing: border-box
+}
+.columns,
+.columns:last-child {
+    margin: 0
+}
+
+
+/* removes gap on right in mobile chrome */
+::-webkit-scrollbar {
+display: none;
+}
+/* //////////////////// remove gaps in mobile //////////////////// */
+/* /////////////////////////////////////////////////////////////// */
+</style>
+
+
+<script>
+
+function removeClass() {
+  var element = document.getElementById("mobile-nav");
+  element.classList.toggle("is-active");
+}
+
+</script>
+
+
+    
+  </head>
+
+  <body>
+
+    <!-- Begin Preloader -->
+    <div class="preloader-wrapper" id="toptop">
+      <div class="preloader">
+        <img src="img/preloader.gif" alt="" />
+      </div>
+    </div>
+    <!-- End Preloader-->
+    <!-- Begin Scroll Up Button -->
+
+    <!-- 
+      <a href="#toptop">
+        <button id="toTop" title="Go to top">
+          <i class="fas fa-angle-up"></i>
+        </button>
+      </a>
+    -->
+    
+    <!-- End Scroll Up Button -->
+
+    <!-- Begin Header -->
+    <div class="header-wrapper" id="home">
+      <!-- Begin Hero -->
+      <section class="hero is-large">
+        <!-- Begin Mobile Nav -->
+        <nav class="navbar is-transparent is-hidden-desktop sticky">
+          <!-- Begin Burger Menu -->
+          <div class="navbar-brand sticky" style="background-color: rgba(74, 74, 74, 0.45);">
+            <div class="navbar-burger burger"  data-target="mobile-nav">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <!-- End Burger Menu -->
+          <div id="mobile-nav" class="navbar-menu" >
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <a onclick="removeClass();" class="navbar-item" href="#projectdetails">
+                  Project Details
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a onclick="removeClass();" class="navbar-item" href="#wireframes">
+                  Wireframes
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a onclick="removeClass();" class="navbar-item" href="#content">
+                  Content
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a onclick="removeClass();" class="navbar-item" href="#website">
+                  Website
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- End Mobile Nav -->
+
+
+        <!-- Begin Hero Content-->
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            
+            
+            <h2 class="title is-marginless">Color of Rhythm</h2>
+            <h1 class="subtitle profession" style="font-size: 1.7em;">Portfolio for Musician, Jordan Auber<br></h1>
+            <button class="button is-large is-fullwidth">View Website</button>
+            
+
+
+          </div>
+        </div>
+        <!-- End Hero Content-->
+
+
+        <!-- Begin Hero Menu -->
+        <div class="hero-foot" style="height: 70px;">
+          <div class="hero-foot--wrapper">
+            <div class="columns">
+              <div class="column is-12 hero-menu-desktop has-text-centered">
+                <ul>
+                  <li class="is-active">
+                    <a href="#top">Project Details</a>
+                  </li>
+                  <li>
+                    <a href="#wireframes">Wireframes</a>
+                  </li>
+                  <li>
+                    <a href="#content">Content</a>
+                  </li>
+                  <li>
+                    <a href="#website">Website</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Hero Menu -->
+      </section>
+      <!-- End Hero -->
+    </div>
+    <!-- End Header -->
+
+    <!-- Begin Main Content -->
+    <div class="main-content">
+      <!-- Begin About Me Section -->
+      <div class="section-light about-me" >
+        <div class="container" id="projectdetails">
+          <div class="column is-12 about-me" style="">
+            <h1 class="title section-title">Project Details</h1>
+          </div>
+          <div class="columns is-multiline">
+            <div
+              class="column is-12 has-vertically-aligned-content "
+              data-aos="fade-in"
+            >
+              <p class="is-larger">
+                <strong>Jordan is a musician based in New York 
+              <br></strong>
+              </p>
+              <br />
+              <p>
+
+                Info about the project and what jordan is looking for...............
+                
+                
+              </p>
+              <br />
+              
+              <img src="https://sweeneyc.tech/images/color_of_rhythm_mockup_2.png">
+
+            </div>
+          </div>
+
+
+
+          <div class="column is-12 about-me" id="wireframes">
+            <h1 class="title section-title">Wireframes</h1>
+          </div>
+            
+            <!-- ////////////////////////////////////// -->
+            <!-- ///////////// Timeline /////////////// -->
+            <!-- ////////////////////////////////////// -->
+            <div class="column is-fullwidth" data-aos="fade-in">
+
+                wireframes
+
+                <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/blooming/1318571636?i=1318571930"></iframe>
+
+            </div>
+            <!-- ////////////////////////////////////// -->
+            <!-- ///////////// Timeline /////////////// -->
+            <!-- ////////////////////////////////////// -->
+
+
+
+            
+        </div>
+      </div>
+      <!-- End About Me Content -->
+
+
+
+
+
+
+      <div class="section-dark resume" id="content">
+        <div class="container">
+          <div
+            class="columns is-multiline"
+            data-aos="fade-in"
+            data-aos-easing="linear"
+          >
+            <div class="column is-12 about-me">
+              <h1 class="title section-title">
+                Content
+              </h1>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Begin Services Content -->
+      <div class="section-color services" id="website" style="padding: 100px 20px 100px 20px;">
+        <div class="container">
+          <div class="columns is-multiline">
+              
+            <div
+              class="column is-12 about-me"
+              data-aos="fade-in"
+              data-aos-easing="linear"
+            >
+              <h1 class="title section-title">Website</h1>
+
+              <h2 class="subtitle">
+                Website
+              </h2>
+              <br />
+              
+            </div>
+                       
+          </div>
+        </div>
+      </div>
+      <!-- End Services Content -->
+
+
+
+
+      
+     
+     
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Begin Footer -->
+    <div class="footer">
+      <p>
+        Built with<a href="https://bulma.io/">Bulma</a>
+      </p>
+    </div>
+    <!-- End Footer -->
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="showcase.js"></script>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: "ease-out",
+        duration: 800,
+      });
+    </script>
+  </body>
+</html>
