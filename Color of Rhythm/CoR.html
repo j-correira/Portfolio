@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Color of Rhythm</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Signika&display=swap" rel="stylesheet">
+
+
+
+<style>
+
+body {
+    background-color: #fbfaf5;
+    font-family: 'Signika', sans-serif;
+    color: #191918;
+}
+
+#navLogo {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  width: 180px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.button-style {
+  border: 2px solid #191918;
+  color: #191918;
+  font-family: 'Signika', sans-serif;
+}
+
+.navIcons {
+  padding: 0px;
+  display:inline;
+}
+
+.marginBottom-10 {
+  margin-bottom: 10px;
+}
+
+.marginTop-16 {
+  margin-top: 16px;
+}
+
+.footer {
+  padding:0px;
+  padding-top: 7px;
+}
+
+.colorChange {
+  color:#c1c1c1;
+  margin-right: 15px;
+}
+
+.transparent{
+  background:#0a0a0a99;
+}
+
+.sidenav {
+  
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  background-color: #fbfaf5;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 100px;
+
+}
+
+.sidenav a {
+  padding: 0px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: -4px;
+  right: 18px;
+  font-size: 70px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+</style>
+  </head>
+
+  <body>
+      <div id="overlay" onclick="closeNav()"></div>
+
+
+      <section class="section" style="padding-bottom: 0px;">
+          <div class="container" id="content">
+
+            <div class="columns is-mobile">
+              <div class="column is-two-thirds" style="padding-top: 0px;">
+
+                <img src="Images/ColorOfRhythm_Logo.png">
+              </div>
+            
+
+            
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#"><u>Home</u></a>
+                <a href="#">About</a>
+                <a href="#">Listen</a>
+                <a href="#">Gallery</a>
+                <a href="#">Contact</a>
+
+                <img src="Images/ColorOfRhythm_Logo.png" id="navLogo">
+
+                <div class="content has-text-centered ">
+                    <a style="display:inline; padding:0px;" href=""><i class="fab fa-spotify fa-1x colorChange"></i></a>
+                    <a style="display:inline; padding:0px;" href=""><i class="fab fa-instagram colorChange"></i></a>
+                    <a style="display:inline; padding:0px;" href=""><i class="fab fa-youtube colorChange"></i></a>
+                    <a style="display:inline; padding:0px;" href=""><i class="fab fa-facebook-square colorChange"></i></a>
+                  <p style="color:#c1c1c1;">© Jordan Auber 2019</p>
+    
+                </div>
+              </div>
+            
+              <div class="column is-one-third" style="margin-top:3px;">
+              <span style="font-size:50px; float:right; line-height: .3;  cursor:pointer" onclick="openNav()">&#9776; </span>
+            </div>
+
+          </div>
+<!-- /columns is mobile-->
+
+            </div>
+            <!-- /container-->
+
+
+              
+              
+              <script>
+              function openNav() {
+                document.getElementById("mySidenav").style.width = "275px";
+                document.getElementById("overlay").style.display = "block";
+              }
+              
+              function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("overlay").style.display = "none";
+              }
+              </script>
+
+
+        </section>
+
+        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/s5CUX8pApd0' frameborder='0' allowfullscreen></iframe></div>
+
+
+        <section class="section" style="padding: 1rem 1.5rem;">
+        <div class="container">
+            <p>Sit amet dictum sit amet justo donec enim. Ornare suspendisse sed nisi lacus sed viverra tellus in. Eget mauris pharetra et ultrices neque ornare aenean euismod. Morbi quis commodo odio aenean sed.</p>
+        </div>
+        </section>
+
+        <section class="section" style="padding: 0px 1.5rem;">
+        <div class="container">
+          <button class="button is-large is-fullwidth button-style marginBottom-10">Listen</button>
+          <button class="button is-large is-fullwidth button-style">Contact</button>
+        </div>
+        </section>
+
+
+        <footer class="footer marginTop-16" style="background-color:#4e4e4d; ">
+            <div class="content has-text-centered" id="">
+                <a href=""><i class="fab fa-spotify fa-2x colorChange navIcons"></i></a>
+                <a href=""><i class="fab fa-instagram fa-2x colorChange navIcons"></i></a>
+                <a href=""><i class="fab fa-youtube fa-2x colorChange navIcons"></i></a>
+                <a href=""><i style="margin-right:0px;" class="fab fa-facebook-square fa-2x colorChange navIcons"></i></a>
+              <p style="color:#c1c1c1;">© Jordan Auber 2019</p>
+
+            </div>
+          </footer>
+
+   
+
+  </body>
+</html>

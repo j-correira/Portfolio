@@ -55,7 +55,36 @@
   margin-top: 53px;
 }
 
+#about_IMG{
+  margin-bottom: 10px;
+}
 
+
+}/* end media query */
+
+
+.addBorder{
+  border: 1px solid grey;
+}
+
+#myBtn {
+  display: block; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 7px; /* Place the button at the bottom of the page */
+  right: 12px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgba(74, 74, 74, 0.4); /* Set a background color */
+  color: rgba(255, 255, 255, 0.41); /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#contact_IMG {
+  margin-top:12px;
 }
 
 
@@ -87,6 +116,10 @@ function removeClass() {
   element.classList.toggle("is-active");
 }
 
+function topFunction() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
 </script>
 
 
@@ -94,6 +127,10 @@ function removeClass() {
   </head>
 
   <body>
+
+<!-- back to top button -->
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
 
     <!-- Begin Preloader -->
     <div class="preloader-wrapper" id="toptop">
@@ -128,6 +165,9 @@ function removeClass() {
               <span></span>
             </div>
           </div>
+
+
+
           <!-- End Burger Menu -->
           <div id="mobile-nav" class="navbar-menu" >
             <div class="navbar-end">
@@ -138,7 +178,7 @@ function removeClass() {
               </div>
               <div class="navbar-item">
                 <a onclick="removeClass();" class="navbar-item" href="#wireframes">
-                  Wireframes
+                  Mockups
                 </a>
               </div>
               <div class="navbar-item">
@@ -162,9 +202,9 @@ function removeClass() {
           <div class="container has-text-centered">
             
             
-            <h2 class="title is-marginless">Color of Rhythm</h2>
-            <h1 class="subtitle profession" style="font-size: 1.7em;">Portfolio for Musician, Jordan Auber<br></h1>
-            <button class="button is-large is-fullwidth">View Website</button>
+            <h2 class="title is-marginless">Color of Rhythm || Process Document</h2>
+            <h1 class="subtitle profession" style="font-size: 1.7em;">Portfolio website for Jordan Auber<br><br>(Work in Progress)</h1>
+            <!-- <button class="button is-large is-fullwidth" disabled>View Website</button> -->
             
 
 
@@ -183,7 +223,7 @@ function removeClass() {
                     <a href="#top">Project Details</a>
                   </li>
                   <li>
-                    <a href="#wireframes">Wireframes</a>
+                    <a href="#wireframes">Mockups</a>
                   </li>
                   <li>
                     <a href="#content">Content</a>
@@ -204,7 +244,9 @@ function removeClass() {
 
     <!-- Begin Main Content -->
     <div class="main-content">
-      <!-- Begin About Me Section -->
+
+   
+         
       <div class="section-light about-me" >
         <div class="container" id="projectdetails">
           <div class="column is-12 about-me" style="">
@@ -216,49 +258,83 @@ function removeClass() {
               data-aos="fade-in"
             >
               <p class="is-larger">
-                <strong>Jordan is a musician based in New York 
-              <br></strong>
+                Building a mobile optimized portfolio for Jordan Auber, a musician based in New York.                
+              <br>
+              <br>
+              <strong>Goals of Project:</strong>
+              <br>
+              • Easily listen to Jordan's music on multiple platforms
+              <br>
+              • Links to social media on all pages
+              <br>
+              • Quick link to Contact page
+              <br>
+              • Display high quality content
               </p>
               <br />
               <p>
-
-                Info about the project and what jordan is looking for...............
-                
-                
+ 
               </p>
-              <br />
-              
-              <img src="https://sweeneyc.tech/images/color_of_rhythm_mockup_2.png">
-
             </div>
           </div>
 
-
-
-          <div class="column is-12 about-me" id="wireframes">
-            <h1 class="title section-title">Wireframes</h1>
-          </div>
-            
-            <!-- ////////////////////////////////////// -->
-            <!-- ///////////// Timeline /////////////// -->
-            <!-- ////////////////////////////////////// -->
-            <div class="column is-fullwidth" data-aos="fade-in">
-
-                wireframes
-
-                <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/blooming/1318571636?i=1318571930"></iframe>
-
-            </div>
-            <!-- ////////////////////////////////////// -->
-            <!-- ///////////// Timeline /////////////// -->
-            <!-- ////////////////////////////////////// -->
-
-
-
-            
         </div>
-      </div>
-      <!-- End About Me Content -->
+        
+        </div> 
+        <!-- End About Me Content -->
+
+            <!-- ////////////////////////////////////// -->
+            <!-- ///////////// Timeline /////////////// -->
+        <div class="section-light" id="">
+          <div class="column is-12 about-me" id="wireframes">
+            <h1 class="title section-title">Mockups</h1>
+          </div>
+        </div>
+
+
+
+
+            <div class="column is-fullwidth" data-aos="fade-in">
+              <img src="https://sweeneyc.tech/images/CoR_Mockup_7.png">
+              <img src="https://sweeneyc.tech/images/color_of_rhythm_mockup_2.png"> 
+            </div>
+
+
+<!-- center -->
+<div class="container">
+
+            <div class="columns">
+                <div class="column is-one-third">
+                    <img style="border: 1px solid #8080808a;" src="https://sweeneyc.tech/images/Intro.png">
+                </div>
+                <div class="column">
+                    <img style="border: 1px solid #8080808a;" src="https://sweeneyc.tech/images/Home.png">
+                </div>
+                <div class="column">
+                    <img style="border: 1px solid #8080808a;" src="https://sweeneyc.tech/images/Nav.png">
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="columns">
+                  <div class="column is-one-third">
+                      <img id="about_IMG" style="border: 1px solid #8080808a;" src="https://sweeneyc.tech/images/About.png">
+                      <img id="contact_IMG" style="border: 1px solid #8080808a;" src="https://sweeneyc.tech/images/Contact.png">
+                  </div>
+                  <div class="column">
+                      <img style="border: 1px solid #8080808a;" src="https://sweeneyc.tech/images/Listen.png">
+                  </div>
+                  <div class="column">
+                      <img style="border: 1px solid #8080808a;" src="https://sweeneyc.tech/images/Gallery.png">
+                  </div>
+                </div>
+
+</div>                
+
+            
+        
+
 
 
 
@@ -278,12 +354,15 @@ function removeClass() {
               </h1>
             </div>
 
+
+
+
           </div>
         </div>
       </div>
 
 
-      <!-- Begin Services Content -->
+     
       <div class="section-color services" id="website" style="padding: 100px 20px 100px 20px;">
         <div class="container">
           <div class="columns is-multiline">
@@ -305,8 +384,7 @@ function removeClass() {
           </div>
         </div>
       </div>
-      <!-- End Services Content -->
-
+ 
 
 
 
