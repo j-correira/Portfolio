@@ -13,15 +13,135 @@
 
 <style>
 
+/* mobile queries */
+@media (min-width:320px)  {
+
+  #desktop_nav {
+    display:none;
+  }
+
+ #body_logo { display:none;
+ }
+
+ #desktop_content {
+   display: none;
+ }
+
+ #burger {
+   display:block;
+ }
+
+ #header_logo {
+   display:block;
+ }
+
+}
+/* end mobiel queries */
+
+
+/* desktop queries */
+@media (min-width:961px)  {
+
+  .columns.is-mobile>.column.is-two-thirds {
+    flex: none;
+    width: 100%;
+}
+
+.mobile_content {
+  display:none;
+}
+
+#desktop_content {
+  margin-left:30px;
+}
+
+#burger_div {
+  display:none;
+}
+
+#body_logo {
+  display:block;
+  max-width: 300%;
+  margin-top: 70px;
+
+ }
+
+ #body_paragraph {
+  width: 410px;
+
+ }
+
+ #header_logo {
+   display:none;
+
+  }
+
+#youtube {
+  float:right;
+  margin-bottom: 25px;
+}
+
+ #content {
+    width: 80%;
+    margin: auto;
+ }
+
+ #burger {
+   display:none;
+   margin-top:50px;
+   color: #191918;
+ }
+
+ #desktop_nav {
+   display:block;
+ 
+  color:white;
+  margin-bottom: 30px;
+    height: 50px;
+ 
+ }
+
+ }/* end desktop queries */
+
+
+
 body {
     background-color: #fbfaf5;
     font-family: 'Signika', sans-serif;
     color: #191918;
 }
 
+.nav_links {
+  color: #121212;
+}
+
+#nav_social {
+  float:right;
+  
+}
+
+#nav_hr {
+  background-color: #19191870;
+    width: 96%;
+    margin: auto;
+    margin: 21px;
+}
+
+#desktop_nav a:link {
+  font-size:25px;
+  color:white;
+  margin-right: 25px;
+}
+
+.signika {
+  font-family: 'Signika', sans-serif;
+}
+
+.marginRight-20 {
+  margin-right:20px;
+}
+
 #navLogo {
-  opacity: 0.7;
-  filter: alpha(opacity=70);
   width: 180px;
   display: block;
   margin: 0 auto;
@@ -38,6 +158,8 @@ body {
 .navIcons {
   padding: 0px;
   display:inline;
+  color: #121212e0;
+  width: .6em;
 }
 
 .marginBottom-10 {
@@ -50,11 +172,16 @@ body {
 
 .footer {
   padding:0px;
-  padding-top: 7px;
+  padding-top: 10px;
 }
 
 .colorChange {
   color:#c1c1c1;
+  margin-right: 15px;
+}
+
+.colorChange-sidebar {
+  color:#121212eb;
   margin-right: 15px;
 }
 
@@ -124,17 +251,43 @@ body {
       <div id="overlay" onclick="closeNav()"></div>
 
 
-      <section class="section" style="padding-bottom: 0px;">
+      <section class="section" id="desktop_nav" style="padding-bottom: 0px;">
           <div class="container" id="content">
 
             <div class="columns is-mobile">
-              <div class="column is-two-thirds" style="padding-top: 0px;">
+              <div class="column is-two-thirds" id="desktop_content" style="padding-top: 0px;">
 
-                <img src="Images/ColorOfRhythm_Logo.png">
+                <img id="header_logo" src="Images/ColorOfRhythm_Logo.png">
+
+                <div class="">
+                  <a class="nav_links" href="#"><u>Home</u></a>
+                  <a class="nav_links" href="#">About</a>
+                  <a class="nav_links" href="#">Listen</a>
+                  <a class="nav_links" href="#">Gallery</a>
+                  <a class="nav_links" href="#">Contact</a>  
+
+
+                  <div class="has-text-centered" id="nav_social">
+                      <a href=""><i style="width:.5em; padding-bottom: 10px;" class="fab fa-spotify fa-2x navIcons"></i></a>
+                      <a href=""><i style="width:.5em; padding-bottom: 10px;" class="fab fa-instagram fa-2x navIcons"></i></a>
+                      <a href=""><i style="width:.5em; padding-bottom: 10px;" class="fab fa-youtube fa-2x navIcons"></i></a>
+                      <a href=""><i style="margin-right:0px; width:.5em; padding-bottom: 10px;" class="fab fa-facebook-square fa-2x navIcons "></i></a>  
+                  </div>
+
+
+                </div>
+
+
+
+                
+
               </div>
-            
+
 
             
+
+<!-- ||||||||||||||||||||||||||||||||||||| -->
+<!-- ||||||||||||| sidebar ||||||||||||||| -->
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="#"><u>Home</u></a>
@@ -146,21 +299,23 @@ body {
                 <img src="Images/ColorOfRhythm_Logo.png" id="navLogo">
 
                 <div class="content has-text-centered ">
-                    <a style="display:inline; padding:0px;" href=""><i class="fab fa-spotify fa-1x colorChange"></i></a>
-                    <a style="display:inline; padding:0px;" href=""><i class="fab fa-instagram colorChange"></i></a>
-                    <a style="display:inline; padding:0px;" href=""><i class="fab fa-youtube colorChange"></i></a>
-                    <a style="display:inline; padding:0px;" href=""><i class="fab fa-facebook-square colorChange"></i></a>
-                  <p style="color:#c1c1c1;">© Jordan Auber 2019</p>
+                    <a style="display:inline; padding:0px;" href=""><i class="fab fa-spotify fa-1x colorChange-sidebar"></i></a>
+                    <a style="display:inline; padding:0px;" href=""><i class="fab fa-instagram colorChange-sidebar"></i></a>
+                    <a style="display:inline; padding:0px;" href=""><i class="fab fa-youtube colorChange-sidebar"></i></a>
+                    <a style="display:inline; padding:0px;" href=""><i class="fab fa-facebook-square colorChange-sidebar"></i></a>
+                  <p style="color:#121212eb;">© Jordan Auber 2019</p>
     
                 </div>
               </div>
             
-              <div class="column is-one-third" style="margin-top:3px;">
-              <span style="font-size:50px; float:right; line-height: .3;  cursor:pointer" onclick="openNav()">&#9776; </span>
+              <div class="column is-one-third" id="burger_div" style="margin-top:3px;">
+              <span id="burger" style="font-size:50px; float:right; line-height: .3;  cursor:pointer" onclick="openNav()">&#9776; </span>
             </div>
 
           </div>
 <!-- /columns is mobile-->
+<!-- ||||||||||||| sidebar ||||||||||||||| -->
+<!-- ||||||||||||||||||||||||||||||||||||| -->
 
             </div>
             <!-- /container-->
@@ -182,23 +337,47 @@ body {
 
 
         </section>
+        <hr id="nav_hr">
 
-        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/s5CUX8pApd0' frameborder='0' allowfullscreen></iframe></div>
+<div class="columns">
+  <div id="desktop_content">
 
+      
 
-        <section class="section" style="padding: 1rem 1.5rem;">
+        <div id="" class="column is-4">
+            <img id="body_logo" src="Images/ColorOfRhythm_Logo.png">
+            <p id="body_paragraph">Sit amet dictum sit amet justo donec enim. Ornare suspendisse sed nisi lacus sed viverra tellus in. Eget mauris pharetra et ultrices neque ornare aenean euismod. Morbi quis commodo odio aenean sed.</p>
+        </div>
+      </div>
+
+        <div id="youtube" class="column is-8">
+          <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container' id=""><iframe src='https://www.youtube.com/embed/s5CUX8pApd0' frameborder='0' allowfullscreen></iframe></div>
+      </div>
+      
+</div>
+<!-- /columns -->
+<section class="section" style="padding: 0px 1.5rem;">
+    <div class="container">
+      <button class="button is-large is-fullwidth button-style marginBottom-10">Listen</button>
+      <button class="button is-large is-fullwidth button-style">Contact</button>
+    </div>
+    </section>
+
+<div id="content" i>
+        <section class="section mobile_content"  style="padding: 1rem 1.5rem;">
         <div class="container">
+            <img id="body_logo" src="Images/ColorOfRhythm_Logo.png">
             <p>Sit amet dictum sit amet justo donec enim. Ornare suspendisse sed nisi lacus sed viverra tellus in. Eget mauris pharetra et ultrices neque ornare aenean euismod. Morbi quis commodo odio aenean sed.</p>
         </div>
         </section>
 
-        <section class="section" style="padding: 0px 1.5rem;">
+        <section class="section mobile_content" style="padding: 0px 1.5rem;">
         <div class="container">
           <button class="button is-large is-fullwidth button-style marginBottom-10">Listen</button>
           <button class="button is-large is-fullwidth button-style">Contact</button>
         </div>
         </section>
-
+</div>
 
         <footer class="footer marginTop-16" style="background-color:#4e4e4d; ">
             <div class="content has-text-centered" id="">
