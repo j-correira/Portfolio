@@ -200,7 +200,7 @@
 
 
     body {
-      background-color: #fbfaf5;
+      /* background-color: #fbfaf5; */
       font-family: 'Signika', sans-serif;
       color: #191918;
     }
@@ -290,7 +290,7 @@
     }
 
     .marginTop-16 {
-      margin-top: 16px;
+      margin-top: 6px;
     }
 
     .footer {
@@ -389,27 +389,32 @@ h1 {
   margin-bottom: 30px;
 }
 
+#header {
+    background-color: #fbfaf5;
+    height: 165px;
+}
+
   </style>
 </head>
 
 <body>
 
+<div id="header">
   <span id="burger" style="font-size:50px; float:right; line-height: .3;  cursor:pointer" onclick="openNav()">&#9776;
   </span>
 
   <img id="mobile_logo" src="Images/ColorOfRhythm_Logo.png">
-
-
+</div>
 
   <!-- ||||||||||||||||||||||||||||||||||||| -->
   <!-- ||||||||||||| sidebar ||||||||||||||| -->
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="index.html"><u>Home</u></a>
-    <a href="about.html">About</a>
-    <a href="listen.html">Listen</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="contact.html">Contact</a>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#"><u>Listen</u></a>
+    <a href="#">Gallery</a>
+    <a href="#">Contact</a>
 
     <img src="Images/ColorOfRhythm_Logo.png" id="navLogo">
 
@@ -419,11 +424,8 @@ h1 {
       <a style="display:inline; padding:0px;" href=""><i class="fab fa-youtube colorChange-sidebar"></i></a>
       <a style="display:inline; padding:0px;" href=""><i class="fab fa-facebook-square colorChange-sidebar"></i></a>
       <p style="color:#121212eb;">© Jordan Auber 2019</p>
-
     </div>
   </div>
-
-  
   <!-- ||||||||||||| sidebar ||||||||||||||| -->
   <!-- ||||||||||||||||||||||||||||||||||||| -->
 
@@ -439,8 +441,8 @@ h1 {
 
           <img id="header_logo" src="Images/ColorOfRhythm_Logo.png">
 
-          <a class="marginRight-20 nav_active" href="#">Home</a>
-          <a class="nav_links marginRight-20 " href="#">About</a>
+          <a class="marginRight-20" href="#">Home</a>
+          <a class="nav_links marginRight-20 nav_active" href="#">About</a>
           <a class="nav_links marginRight-20 " href="#">Listen</a>
           <a class="nav_links marginRight-20 " href="#">Gallery</a>
           <a class="nav_links" href="#">Contact</a>
@@ -474,52 +476,6 @@ h1 {
 
 
 
-
-
-
-  <div class="columns" id="contentContainer">
-
-    <div id="mobile_content">
-
-      <div id="" class="column is-4">
-        <img id="body_logo" src="Images/ColorOfRhythm_Logo.png">
-        <p id="body_paragraph">Sit amet dictum sit amet justo donec enim. Ornare suspendisse sed nisi lacus sed viverra
-          tellus in. Eget mauris pharetra et ultrices neque ornare aenean euismod. Morbi quis commodo odio aenean sed.
-        </p>
-      </div>
-    </div>
-
-    <div id="youtube" class="column is-8">
-      <style>
-        .embed-container {
-          position: relative;
-          padding-bottom: 56.25%;
-          height: 0;
-          overflow: hidden;
-          max-width: 100%;
-        }
-
-        .embed-container iframe,
-        .embed-container object,
-        .embed-container embed {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-        }
-      </style>
-      <div class='embed-container' id=""><iframe src='https://www.youtube.com/embed/s5CUX8pApd0' frameborder='0'
-          allowfullscreen></iframe></div>
-    </div>
-
-  </div>
-  <!-- /columns -->
-
-
-
-
-
 <div class="container" id="desktop_content">
   <div class="columns">
 
@@ -541,64 +497,13 @@ h1 {
           <hr class="margin-bottom30" id="nav_hr">
         </div>
 
-<div class="contact_form">
-    <form
-    action="#"
-    method="POST"
-  >
-    <div class="field">
-      <label class="label">Name</label>
-      <div class="control has-icons-left">
-        <input
-          class="input"
-          type="text"
-          placeholder="Ex. James Bond"
-          name="Name"
-        />
-        <span class="icon is-small is-left">
-          <i class="fas fa-user"></i>
-        </span>
-      </div>
-    </div>
-    <div class="field">
-      <label class="label">Email</label>
-      <div class="control has-icons-left">
-        <input
-          class="input"
-          type="email"
-          placeholder="Ex. j.bond@007.com"
-          name="Email"
-        />
-        <span class="icon is-small is-left">
-          <i class="fas fa-envelope"></i>
-        </span>
-      </div>
-    </div>
 
-    <div class="field">
-      <label class="label">Message</label>
-      <div class="control">
-        <textarea
-          class="textarea"
-          placeholder="Hey Jordan, Whatsup!"
-          name="Message"
-        ></textarea>
-      </div>
-    </div>
-
-        <button class="button is-medium is-fullwidth" style="font-family: 'Signika', sans-serif;">Send Email
-        </button>
-
-  </form>
-</div>
 
       </div>
 
 
   </div>
 </div>
-
-
 
 
 
@@ -609,22 +514,49 @@ h1 {
 
 
   <div id="content">
-    <section class="section mobile_content" style="padding: 1rem 1.5rem;">
+    <section class="section mobile_content"  style="padding: 0px;">
       <div class="container">
 
-        <p>Sit amet dictum sit amet justo donec enim. Ornare suspendisse sed nisi lacus sed viverra tellus in. Eget
-          mauris pharetra et ultrices neque ornare aenean euismod. Morbi quis commodo odio aenean sed.</p>
+        <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%; max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/blooming/1318571636?i=1318571930&app=music"></iframe>
+
+        <iframe src="https://open.spotify.com/embed/track/1bFgR2SFJIUAYenrUAWs0I" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
       </div>
     </section>
 
-    <section class="section mobile_content" style="padding: 0px 1.5rem;">
+    <section class="section mobile_content" style="padding: 0px;">
       <div class="container">
-        <button class="button is-large is-fullwidth button-style marginBottom-10">Listen</button>
-        <button class="button is-large is-fullwidth button-style">Contact</button>
+
+            <div class="columns is-mobile">
+            
+                <div class="column is-half">
+                   <a target="_blank" href="https://open.spotify.com/artist/4QuFb0T0DBjAQaSLqQXQeR"> <button class="button button-style is-medium is-fullwidth">Spotify</button> </a>
+                </div>
+            
+                <div class="column">
+                        <a target="_blank" href="https://itunes.apple.com/us/artist/color-of-rhythm/1316700467"> <button class="button button-style is-medium is-fullwidth">Apple Music</button> </a>
+                </div>
+            
+            </div>
+            
+            <div class="columns is-mobile" >
+                <div class="column is-half" style="padding-top:0px;">
+                        <a target="_blank" href="https://play.google.com/store/music/album/Color_of_Rhythm_Flotian?id=Bbwfyrhng273fgm5wutpb4pugf4"> <button class="button button-style is-medium is-fullwidth">Google Play</button> </a>
+                </div>
+            
+                <div class="column" style="padding-top:0px;">
+                        <a target="_blank" href="https://www.amazon.com/gp/product/B077ST6MJD"> <button class="button button-style is-medium is-fullwidth">Amazon</button> </a>
+                </div>
+            </div>
+
       </div>
     </section>
   </div>
 
+
+
+<!-- |||||||||||||||||||||||||||||||||||||||||||| -->
+<!-- |||||||||||||||||| footer |||||||||||||||||| -->
   <footer class="footer marginTop-16" style="background-color:#4e4e4d; ">
     <div class="content has-text-centered" id="">
       <a href=""><i class="fab fa-spotify fa-2x colorChange navIcons footer_social_icons"></i></a>
@@ -636,8 +568,8 @@ h1 {
 
     </div>
   </footer>
-
-
+<!-- |||||||||||||||||| footer |||||||||||||||||| -->
+<!-- |||||||||||||||||||||||||||||||||||||||||||| -->
 
 
 
@@ -656,5 +588,4 @@ h1 {
 
 
 </body>
-
 </html>
