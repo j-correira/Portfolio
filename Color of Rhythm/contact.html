@@ -11,6 +11,10 @@
   <link href="https://fonts.googleapis.com/css?family=Signika&display=swap" rel="stylesheet">
 
 
+  <!-- ||| fade slider ||| -->
+  <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="http://www.slidesjs.com/examples/basic-fade/js/jquery.slides.min.js"></script>
+
 
   <style>
     /* //////////////////////////////////////////////////////////////// */
@@ -29,7 +33,6 @@
     ::-webkit-scrollbar {
       display: none;
     }
-
     /* //////////////////// remove gaps in mobile //////////////////// */
     /* /////////////////////////////////////////////////////////////// */
 
@@ -40,7 +43,8 @@
       }
     }
 
-    /* mobile queries */
+    /* /////////////////////////////////////////////////////////////// */
+    /* //////////////////// remove gaps in mobile //////////////////// */
     @media (min-width:320px) {
 
       #desktop_nav {
@@ -99,11 +103,12 @@
 
 
     }
+/* //////////////////////// mobile queries /////////////////////// */
+/* /////////////////////////////////////////////////////////////// */
 
-    /* end mobile queries */
 
-
-    /* desktop queries */
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////// desktop queries /////////////////////// */
     @media (min-width:961px) {
 
       .columns.is-mobile>.column.is-two-thirds {
@@ -112,7 +117,7 @@
       }
 
       #youtube {
-        padding: 21px;
+        
       }
 
       #burger_div {
@@ -169,8 +174,8 @@
       }
 
       #youtube {
-        float: right;
-        margin-bottom: 25px;
+        
+        display:block;
       }
 
       #content {
@@ -192,9 +197,8 @@
       }
 
     }
-
-    /* ||||||||| end desktop queries ||||||||| */
-    /* ||||||||||||||||||||||||||||||||||||||| */
+/* ||||||||| end desktop queries ||||||||| */
+/* ||||||||||||||||||||||||||||||||||||||| */
 
 
 
@@ -290,7 +294,7 @@
     }
 
     .marginTop-16 {
-      margin-top: 16px;
+      margin-top: 6px;
     }
 
     .footer {
@@ -394,6 +398,100 @@ h1 {
     height: 165px;
 }
 
+#about_img {
+    max-width:60%;
+    margin: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.gallery_img {   
+    display:block;
+}
+
+.center {
+    margin:auto;
+}
+
+
+
+
+.slider {
+  max-width: 300px;
+  height: 200px;
+  margin: 20px auto;
+  position: relative;
+  margin-bottom: 120px;
+}
+.slide1,.slide2,.slide3,.slide4,.slide5 {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+}
+.slide1 {
+  background: url(Images/jordan_about_img.png)no-repeat center;
+      background-size: cover;
+    animation:fade 8s infinite;
+-webkit-animation:fade 8s infinite;
+
+} 
+.slide2 {
+  background: url(Images/jordan_about_img_2.png)no-repeat center;
+      background-size: cover;
+    animation:fade2 8s infinite;
+-webkit-animation:fade2 8s infinite;
+}
+.slide3 {
+    background: url(Images/jordan_about_img_3.png)no-repeat center;
+      background-size: cover;
+    animation:fade3 8s infinite;
+-webkit-animation:fade3 8s infinite;
+}
+@keyframes fade
+{
+  0%   {opacity:1}
+  33.333% { opacity: 0}
+  66.666% { opacity: 0}
+  100% { opacity: 1}
+}
+@keyframes fade2
+{
+  0%   {opacity:0}
+  33.333% { opacity: 1}
+  66.666% { opacity: 0 }
+  100% { opacity: 0}
+}
+@keyframes fade3
+{
+  0%   {opacity:0}
+  33.333% { opacity: 0}
+  66.666% { opacity: 1}
+  100% { opacity: 0}
+}
+
+input[type=text],[type=email] {
+    border: 2px solid #191918;
+}
+
+.textarea {
+    border: 2px solid #191918;
+}
+
+.label {
+    font-size: 24px;
+    font-weight:100;
+    margin-bottom:0px;
+}
+
+.label:not(:last-child) {
+    margin-bottom: 0px;
+}
+
+#header {
+    background-color: #fbfaf5;
+    height: 165px;
+}
+
   </style>
 </head>
 
@@ -406,16 +504,15 @@ h1 {
   <img id="mobile_logo" src="Images/ColorOfRhythm_Logo.png">
 </div>
 
-
   <!-- ||||||||||||||||||||||||||||||||||||| -->
   <!-- ||||||||||||| sidebar ||||||||||||||| -->
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="index.html"><u>Home</u></a>
+    <a href="CoR.html">Home</a>
     <a href="about.html">About</a>
     <a href="listen.html">Listen</a>
     <a href="gallery.html">Gallery</a>
-    <a href="contact.html">Contact</a>
+    <a href="contact.html"><u>Contact</u></a>
 
     <img src="Images/ColorOfRhythm_Logo.png" id="navLogo">
 
@@ -426,7 +523,6 @@ h1 {
       <a style="display:inline; padding:0px;" href=""><i class="fab fa-facebook-square colorChange-sidebar"></i></a>
       <p style="color:#121212eb;">© Jordan Auber 2019</p>
     </div>
-
   </div>
   <!-- ||||||||||||| sidebar ||||||||||||||| -->
   <!-- ||||||||||||||||||||||||||||||||||||| -->
@@ -435,6 +531,10 @@ h1 {
 
   <div id="overlay" onclick="closeNav()"></div>
 
+
+
+<!-- ||||||||||||||||||||||||||||||||||||||| -->
+<!-- ||||||||||||| desktop ||||||||||||||||| -->
   <section class="section" id="desktop_nav" style="padding-bottom: 0px;">
     <div class="" id="content">
 
@@ -443,9 +543,9 @@ h1 {
 
           <img id="header_logo" src="Images/ColorOfRhythm_Logo.png">
 
-          <a class="marginRight-20 nav_active" href="#">Home</a>
-          <a class="nav_links marginRight-20 " href="#">About</a>
-          <a class="nav_links marginRight-20 " href="#">Listen</a>
+          <a class="marginRight-20" href="#">Home</a>
+          <a class="nav_links marginRight-20" href="#">About</a>
+          <a class="nav_links marginRight-20 nav_active" href="#">Listen</a>
           <a class="nav_links marginRight-20 " href="#">Gallery</a>
           <a class="nav_links" href="#">Contact</a>
 
@@ -464,7 +564,7 @@ h1 {
         <!-- /column two-thirds-->
 
       </div>
-      <!-- /columns is mobile-->
+      <!-- /columns -->
 
     </div>
     <!-- /container-->
@@ -472,135 +572,80 @@ h1 {
   </section>
 
   <hr id="nav_hr">
+<!-- ||||||||||||| desktop ||||||||||||||||| -->
+<!-- ||||||||||||||||||||||||||||||||||||||| -->
 
+<section class="section" style="padding: 1rem 1.5rem;">
+<div class="content">
 
+        <div class="contact_form">
+                <form
+                action="#"
+                method="POST"
+              >
+                <div class="field">
+                  <label class="label">Name</label>
+                  <div class="control has-icons-left">
+                    <input
+                      class="input"
+                      type="text"
+                      placeholder="Your Name"
+                      name="Name"
+                    />
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-user"></i>
+                    </span>
+                  </div>
+                </div>
 
+                <div class="field">
+                  <label class="label">Email</label>
+                  <div class="control has-icons-left">
+                    <input
+                      class="input"
+                      type="email"
+                      placeholder="Your Email"
+                      name="Email"
+                    />
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                  </div>
+                </div>
 
-
-
-
-
-
-  <div class="columns" id="contentContainer">
-
-    <div id="mobile_content">
-
-      <div id="" class="column is-4" style="padding:0px;">
-        <img id="body_logo" src="Images/ColorOfRhythm_Logo.png">
-        <p id="body_paragraph">Sit amet dictum sit amet justo donec enim. Ornare suspendisse sed nisi lacus sed viverra
-          tellus in. Eget mauris pharetra et ultrices neque ornare aenean euismod. Morbi quis commodo odio aenean sed.
-        </p>
-      </div>
-    </div>
-
-    <div id="youtube" class="column is-8">
-      <style>
-        .embed-container {
-          position: relative;
-          padding-bottom: 56.25%;
-          height: 0;
-          overflow: hidden;
-          max-width: 100%;
-        }
-
-        .embed-container iframe,
-        .embed-container object,
-        .embed-container embed {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-        }
-      </style>
-      <div class='embed-container' id=""><iframe src='https://www.youtube.com/embed/s5CUX8pApd0' frameborder='0'
-          allowfullscreen></iframe></div>
-    </div>
-
-  </div>
-  <!-- /columns -->
-
-
-
-
-
-<div class="container" id="desktop_content">
-  <div class="columns">
-
-    <div class="column is-half">
-      <div class="has-text-centered">
-
-        <h1 class="">listen</h1>
-        <hr id="nav_hr">
-
-        <iframe src="https://open.spotify.com/embed/album/3dYxS8tP2MJa7V92xEDhwG" width="100%" height="210px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-
-        <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="250" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/flotian-ep/1318571636?app=music"></iframe>
-      </div>
-    </div>
-
-    <div class="column is-half">
-        <div class="section-dark has-text-centered">
-          <h1 class="">Contact</h1>
-          <hr class="margin-bottom30" id="nav_hr">
-        </div>
-
-<div class="contact_form">
-    <form
-    action="#"
-    method="POST"
-  >
-    <div class="field">
-      <label class="label">Name</label>
-      <div class="control has-icons-left">
-        <input
-          class="input"
-          type="text"
-          placeholder="Ex. James Bond"
-          name="Name"
-        />
-        <span class="icon is-small is-left">
-          <i class="fas fa-user"></i>
-        </span>
-      </div>
-    </div>
-    <div class="field">
-      <label class="label">Email</label>
-      <div class="control has-icons-left">
-        <input
-          class="input"
-          type="email"
-          placeholder="Ex. j.bond@007.com"
-          name="Email"
-        />
-        <span class="icon is-small is-left">
-          <i class="fas fa-envelope"></i>
-        </span>
-      </div>
-    </div>
-
-    <div class="field">
-      <label class="label">Message</label>
-      <div class="control">
-        <textarea
-          class="textarea"
-          placeholder="Hey Jordan, Whatsup!"
-          name="Message"
-        ></textarea>
-      </div>
-    </div>
-
-        <button class="button is-medium is-fullwidth" style="font-family: 'Signika', sans-serif;">Send Email
-        </button>
-
-  </form>
+                <div class="field">
+                        <label class="label">Subject</label>
+                        <div class="control has-icons-left">
+                          <input
+                            class="input"
+                            type="text"
+                            placeholder="Hello"
+                            name="Name"
+                          />
+                          <span class="icon is-small is-left">
+                            <i class="fas fa-user"></i>
+                          </span>
+                        </div>
+                      </div>
+            
+                <div class="field">
+                  <label class="label">Message</label>
+                  <div class="control">
+                    <textarea
+                      class="textarea"
+                      placeholder="Hey Jordan, Whatsup!"
+                      name="Message"
+                    ></textarea>
+                  </div>
+                </div>
+            
+                    <button class="button button-style is-medium is-fullwidth" style="font-family: 'Signika', sans-serif;">Send Email
+                    </button>
+            
+              </form>
+            </div>
 </div>
-
-      </div>
-
-
-  </div>
-</div>
+</section>
 
 
 
@@ -610,25 +655,8 @@ h1 {
 
 
 
-
-
-  <div id="content">
-    <section class="section mobile_content" style="padding: 1rem 1.5rem;">
-      <div class="container">
-
-        <p>Sit amet dictum sit amet justo donec enim. Ornare suspendisse sed nisi lacus sed viverra tellus in. Eget
-          mauris pharetra et ultrices neque ornare aenean euismod. Morbi quis commodo odio aenean sed.</p>
-      </div>
-    </section>
-
-    <section class="section mobile_content" style="padding: 0px 1.5rem;">
-      <div class="container">
-        <button class="button is-large is-fullwidth button-style marginBottom-10">Listen</button>
-        <button class="button is-large is-fullwidth button-style">Contact</button>
-      </div>
-    </section>
-  </div>
-
+<!-- |||||||||||||||||||||||||||||||||||||||||||| -->
+<!-- |||||||||||||||||| footer |||||||||||||||||| -->
   <footer class="footer marginTop-16" style="background-color:#4e4e4d; ">
     <div class="content has-text-centered" id="">
       <a href=""><i class="fab fa-spotify fa-2x colorChange navIcons footer_social_icons"></i></a>
@@ -640,8 +668,8 @@ h1 {
 
     </div>
   </footer>
-
-
+<!-- |||||||||||||||||| footer |||||||||||||||||| -->
+<!-- |||||||||||||||||||||||||||||||||||||||||||| -->
 
 
 
@@ -656,9 +684,12 @@ h1 {
       document.getElementById("mySidenav").style.width = "0";
       document.getElementById("overlay").style.display = "none";
     }
+
+
+
+
   </script>
 
 
 </body>
-
 </html>
