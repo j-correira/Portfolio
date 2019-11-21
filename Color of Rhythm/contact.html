@@ -4,495 +4,46 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Color of Rhythm</title>
+  <title>Color of Rhythm || Contact</title>
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-
   <link href="https://fonts.googleapis.com/css?family=Signika&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" type="text/css" href="CoR.css">
 
   <!-- ||| fade slider ||| -->
   <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
   <script src="http://www.slidesjs.com/examples/basic-fade/js/jquery.slides.min.js"></script>
 
-
   <style>
-    /* //////////////////////////////////////////////////////////////// */
-    /* //////////////////// remove gaps in mobile //////////////////// */
-    /* removes gap on right in mobile safari */
-    * {
-      box-sizing: border-box
-    }
 
-    .columns,
-    .columns:last-child {
-      margin: 0
-    }
-
-    /* removes gap on right in mobile chrome */
-    ::-webkit-scrollbar {
-      display: none;
-    }
-    /* //////////////////// remove gaps in mobile //////////////////// */
-    /* /////////////////////////////////////////////////////////////// */
-
-
-    @media screen and (min-width: 1408px) {
-      .container {
-        max-width: 1614px;
-      }
-    }
-
-    /* /////////////////////////////////////////////////////////////// */
-    /* //////////////////// remove gaps in mobile //////////////////// */
-    @media (min-width:320px) {
-
-      #desktop_nav {
-        display: none;
-      }
-
-      #youtube {
-        padding: 0px;
-      }
-
-      #mobile_logo {
-        display: block;
-        max-width: 40%;
-        margin-left: 20px;
-        padding-top: 20px;
-      }
-
-      #body_logo {
-        display: none;
-      }
-
-      #desktop_content {
-        display: block;
-      }
-
-      #burger_div {
-        display: block;
-      }
-
-      #header_logo {
-        display: block;
-      }
-
-      #nav_hr {
-        display: none;
-      }
-
-      #desktop_buttons {
-        display: none;
-      }
-
-      #body_paragraph {
-        display: none;
-      }
-
-      #burger {
-        display: block;
-        margin-top: 50px;
-        color: #191918;
-        margin-right: 15px;
-      }
-
-      #desktop_content {
-        display:none;
-      }
-
-
-    }
-/* //////////////////////// mobile queries /////////////////////// */
-/* /////////////////////////////////////////////////////////////// */
-
-
-/* //////////////////////////////////////////////////////////////// */
-/* //////////////////////// desktop queries /////////////////////// */
-    @media (min-width:961px) {
-
-      .columns.is-mobile>.column.is-two-thirds {
-        flex: none;
-        width: 100%;
-      }
-
-      #youtube {
-        
-      }
-
-      #burger_div {
-        display: none;
-      }
-
-      #burger {
-        display: none;
-      }
-
-      #mobile_logo {
-        display: none;
-      }
-
-      #body_logo {
-        display: block;
-        max-width: 320%;
-      }
-
-      #body_paragraph {
-        display: block;
-      }
-
-      #desktop_buttons {
-        display: block;
-      }
-
-      #nav_hr {
-        display: block;
-      }
-
-      #contentContainer {
-        width: 98%;
-        margin: 0 auto;
-      }
-
-      .mobile_content {
-        display: none;
-      }
-
-      #mobile_content {
-        margin-top: auto;
-        margin-bottom: auto;
-        margin-left: 10px;
-      }
-
-      #body_paragraph {
-        width: 410px;
-
-      }
-
-      #header_logo {
-        display: none;
-      }
-
-      #youtube {
-        
-        display:block;
-      }
-
-      #content {
-        width: 100%;
-        margin: auto;
-      }
-
-      #desktop_nav {
-        display: block;
-        color: white;
-        margin-bottom: 30px;
-        height: 50px;
-        padding: 3rem 1.5rem;
-        padding-top: 43px;
-      }
-
-      #burger_div {
-        display: none;
-      }
-
-    }
-/* ||||||||| end desktop queries ||||||||| */
-/* ||||||||||||||||||||||||||||||||||||||| */
-
-
-
-
-    body {
-      background-color: white;
-      font-family: 'Signika', sans-serif;
-      color: #191918;
-    }
-
-    .nav_active {
-      border: 2px solid #191918;
-      color: #191918;
-      border-radius: 5px;
-      padding: 5px 8px 5px 8px;
-      background-color: white;
-    }
-
-    a:hover .nav_active {
-
-      color: #191918;
-
-    }
-
-    .nav_links {
-      color: #121212;
-    }
-
-    #nav_social {
-      float: right;
-
-    }
-
-    #nav_hr {
-      background-color: #19191870;
-      width: 95%;
-      margin: auto;
-      /* margin: 21px; */
-    }
-
-    #desktop_nav a:link {
-      font-size: 25px;
-      color: white;
-    }
-
-    #desktop_nav {
-      margin-bottom: 50px;
-    }
-
-    .mobile_content {
-      padding-top: 0px;
-    }
-
-    .signika {
-      font-family: 'Signika', sans-serif;
-    }
-
-    .marginRight-20 {
-      margin-right: 20px;
-    }
-
-    #navLogo {
-      width: 180px;
-      display: block;
-      margin: 0 auto;
-      margin-top: 60px;
-      margin-bottom: 60px;
-    }
-
-    .button-style {
-      border: 2px solid #191918;
-      color: #191918;
-      font-family: 'Signika', sans-serif;
-    }
-
-    .navIcons a:hover {
-      color: #dbdbdb;
-    }
-
-    .navIcons {
-      padding: 0px;
-      display: inline;
-      color: #121216de;
-      font-size: 60px
-    }
-
-    #desktop_nav_link a:hover {
-      color: #dbdbdb;
-    }
-
-    .marginBottom-10 {
-      margin-bottom: 10px;
-    }
-
-    .marginTop-16 {
-      margin-top: 6px;
-    }
-
-    .footer {
-      padding: 0px;
-      padding-top: 10px;
-    }
-
-    .colorChange {
-      color: #c1c1c1;
-      margin-right: 15px;
-    }
-
-    .colorChange-sidebar {
-      color: #121212eb;
-      margin-right: 15px;
-    }
-
-    .transparent {
-      background: #0a0a0a99;
-    }
-
-    .sidenav {
-      height: 100%;
-      width: 0;
-      position: fixed;
-      z-index: 3;
-      top: 0;
-      right: 0;
-      background-color: #fbfaf5;
-      overflow-x: hidden;
-      transition: 0.5s;
-      padding-top: 100px;
-    }
-
-    .sidenav a {
-      padding: 0px 8px 8px 32px;
-      text-decoration: none;
-      font-size: 25px;
-      color: black;
-      display: block;
-      transition: 0.3s;
-    }
-
-    .sidenav a:hover {
-      color: #f1f1f1;
-    }
-
-    .sidenav .closebtn {
-      position: absolute;
-      top: -4px;
-      right: 18px;
-      font-size: 70px;
-      margin-left: 50px;
-    }
-
-    @media screen and (max-height: 450px) {
-      .sidenav {
-        padding-top: 15px;
-      }
-
-      .sidenav a {
-        font-size: 18px;
-      }
-    }
-
-    #overlay {
-      position: fixed;
-      display: none;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: rgba(0, 0, 0, 0.5);
-      z-index: 2;
-      cursor: pointer;
-    }
-
-    .footer_social_icons {
-      font-size: 21px;
-    }
-
-
-    #listen_section {
-      width:100%;
-      background-color:#989894;
-      color:white;
-    }
-
-h1 {
-  font-size: 30px;
-}
-
-.margin-bottom30 {
-  margin-bottom: 30px;
-}
-
-#header {
-    background-color: #fbfaf5;
-    height: 165px;
-}
-
-#about_img {
-    max-width:60%;
-    margin: auto;
-    display: block;
-    margin-bottom: 20px;
-}
-
-.gallery_img {   
-    display:block;
-}
-
-.center {
-    margin:auto;
-}
-
-
-
-
-.slider {
-  max-width: 300px;
-  height: 200px;
-  margin: 20px auto;
-  position: relative;
-  margin-bottom: 120px;
-}
-.slide1,.slide2,.slide3,.slide4,.slide5 {
-  position: absolute;
-  width: 100%;
-  height: 300px;
-}
-.slide1 {
-  background: url(Images/jordan_about_img.png)no-repeat center;
-      background-size: cover;
-    animation:fade 8s infinite;
--webkit-animation:fade 8s infinite;
-
-} 
-.slide2 {
-  background: url(Images/jordan_about_img_2.png)no-repeat center;
-      background-size: cover;
-    animation:fade2 8s infinite;
--webkit-animation:fade2 8s infinite;
-}
-.slide3 {
-    background: url(Images/jordan_about_img_3.png)no-repeat center;
-      background-size: cover;
-    animation:fade3 8s infinite;
--webkit-animation:fade3 8s infinite;
-}
-@keyframes fade
-{
-  0%   {opacity:1}
-  33.333% { opacity: 0}
-  66.666% { opacity: 0}
-  100% { opacity: 1}
-}
-@keyframes fade2
-{
-  0%   {opacity:0}
-  33.333% { opacity: 1}
-  66.666% { opacity: 0 }
-  100% { opacity: 0}
-}
-@keyframes fade3
-{
-  0%   {opacity:0}
-  33.333% { opacity: 0}
-  66.666% { opacity: 1}
-  100% { opacity: 0}
-}
-
-input[type=text],[type=email] {
-    border: 2px solid #191918;
-}
-
-.textarea {
-    border: 2px solid #191918;
+.label:not(:last-child) {
+     margin-bottom: 0em;
 }
 
 .label {
-    font-size: 24px;
-    font-weight:100;
-    margin-bottom:0px;
+    font-size: 25px;
+    font-weight: 100;
 }
 
-.label:not(:last-child) {
-    margin-bottom: 0px;
+.input {
+    background-color: #fff;
+    border-color: #191918;
+    border-radius: 4px;
+    border-width: 2px;
+    color: #363636;
 }
 
-#header {
-    background-color: #fbfaf5;
-    height: 165px;
+.textarea {
+    background-color: #fff;
+    border-color: #191918;
+    border-radius: 4px;
+    border-width: 2px;
+    color: #363636;
 }
 
   </style>
+
 </head>
 
 <body>
@@ -517,12 +68,12 @@ input[type=text],[type=email] {
     <img src="Images/ColorOfRhythm_Logo.png" id="navLogo">
 
     <div class="content has-text-centered ">
-      <a style="display:inline; padding:0px;" href=""><i class="fab fa-spotify fa-1x colorChange-sidebar"></i></a>
-      <a style="display:inline; padding:0px;" href=""><i class="fab fa-instagram colorChange-sidebar"></i></a>
-      <a style="display:inline; padding:0px;" href=""><i class="fab fa-youtube colorChange-sidebar"></i></a>
-      <a style="display:inline; padding:0px;" href=""><i class="fab fa-facebook-square colorChange-sidebar"></i></a>
-      <p style="color:#121212eb;">© Jordan Auber 2019</p>
-    </div>
+            <a style="display:inline; padding:0px;" target="_blank" href="https://open.spotify.com/artist/4QuFb0T0DBjAQaSLqQXQeR"><i class="fab fa-spotify fa-1x colorChange-sidebar"></i></a>
+            <a style="display:inline; padding:0px;" target="_blank" href="https://www.instagram.com/colorofrhythm/"><i class="fab fa-instagram colorChange-sidebar"></i></a>
+            <a style="display:inline; padding:0px;" target="_blank" href="https://www.youtube.com/channel/UCDehrMcZTuVZDXcmAt7b_SA"><i class="fab fa-youtube colorChange-sidebar"></i></a>
+            <a style="display:inline; padding:0px;" target="_blank" href="https://www.facebook.com/jauber11?epa=SEARCH_BOX"><i class="fab fa-facebook-square colorChange-sidebar"></i></a>
+            <p style="color:#121212eb;">© Jordan Auber 2019</p>
+          </div>
   </div>
   <!-- ||||||||||||| sidebar ||||||||||||||| -->
   <!-- ||||||||||||||||||||||||||||||||||||| -->
@@ -585,46 +136,37 @@ input[type=text],[type=email] {
               >
                 <div class="field">
                   <label class="label">Name</label>
-                  <div class="control has-icons-left">
+                  <div class="control">
                     <input
                       class="input"
                       type="text"
                       placeholder="Your Name"
                       name="Name"
                     />
-                    <span class="icon is-small is-left">
-                      <i class="fas fa-user"></i>
-                    </span>
                   </div>
                 </div>
 
                 <div class="field">
                   <label class="label">Email</label>
-                  <div class="control has-icons-left">
+                  <div class="control">
                     <input
                       class="input"
                       type="email"
                       placeholder="Your Email"
                       name="Email"
                     />
-                    <span class="icon is-small is-left">
-                      <i class="fas fa-envelope"></i>
-                    </span>
                   </div>
                 </div>
 
                 <div class="field">
                         <label class="label">Subject</label>
-                        <div class="control has-icons-left">
+                        <div class="control">
                           <input
                             class="input"
                             type="text"
                             placeholder="Hello"
                             name="Name"
                           />
-                          <span class="icon is-small is-left">
-                            <i class="fas fa-user"></i>
-                          </span>
                         </div>
                       </div>
             
@@ -639,7 +181,7 @@ input[type=text],[type=email] {
                   </div>
                 </div>
             
-                    <button class="button button-style is-medium is-fullwidth" style="font-family: 'Signika', sans-serif;">Send Email
+                    <button class="button button-style is-medium is-fullwidth margin-top30" style="font-family: 'Signika', sans-serif;">Send Email
                     </button>
             
               </form>
@@ -657,17 +199,16 @@ input[type=text],[type=email] {
 
 <!-- |||||||||||||||||||||||||||||||||||||||||||| -->
 <!-- |||||||||||||||||| footer |||||||||||||||||| -->
-  <footer class="footer marginTop-16" style="background-color:#4e4e4d; ">
-    <div class="content has-text-centered" id="">
-      <a href=""><i class="fab fa-spotify fa-2x colorChange navIcons footer_social_icons"></i></a>
-      <a href=""><i class="fab fa-instagram fa-2x colorChange navIcons footer_social_icons"></i></a>
-      <a href=""><i class="fab fa-youtube fa-2x colorChange navIcons footer_social_icons"></i></a>
-      <a href=""><i style="margin-right:0px;"
-          class="fab fa-facebook-square fa-2x colorChange navIcons footer_social_icons"></i></a>
-      <p style="color:#c1c1c1;">© Jordan Auber 2019</p>
-
-    </div>
-  </footer>
+    <footer class="footer marginTop-16" style="background-color:#4e4e4d; ">
+        <div class="content has-text-centered" id="">
+          <a target="_blank" href="https://open.spotify.com/artist/4QuFb0T0DBjAQaSLqQXQeR"><i class="fab fa-spotify fa-2x colorChange navIcons footer_social_icons"></i></a>
+          <a target="_blank" href="https://www.instagram.com/colorofrhythm/"><i class="fab fa-instagram fa-2x colorChange navIcons footer_social_icons"></i></a>
+          <a target="_blank" href="https://www.youtube.com/channel/UCDehrMcZTuVZDXcmAt7b_SA"><i class="fab fa-youtube fa-2x colorChange navIcons footer_social_icons"></i></a>
+          <a target="_blank" href="https://www.facebook.com/jauber11?epa=SEARCH_BOX"><i style="margin-right:0px;"
+              class="fab fa-facebook-square fa-2x colorChange navIcons footer_social_icons"></i></a>
+          <p style="color:#c1c1c1;">© Jordan Auber 2019</p>
+        </div>
+      </footer>
 <!-- |||||||||||||||||| footer |||||||||||||||||| -->
 <!-- |||||||||||||||||||||||||||||||||||||||||||| -->
 
