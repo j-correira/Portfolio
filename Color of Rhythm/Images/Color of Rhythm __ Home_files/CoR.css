@@ -64,10 +64,6 @@
         #desktop_nav {
           display: none;
         }
-
-        .greyBG {
-          display: none;
-        }
   
         #youtube {
           padding: 0px;
@@ -140,12 +136,6 @@
           width: 100%;
         }
 
-
-
-        #youtube_mobile {
-          display:none;
-        }
-
         #desktop_content {
           display:block;
           width:80%;
@@ -182,7 +172,7 @@
   
         #body_logo {
           display: block;
-          max-width: 80%;
+          max-width: 250%;
         }
   
         #body_paragraph {
@@ -234,7 +224,7 @@
         }
   
         #content {
-          width: 83%;
+          width: 100%;
           margin: auto;
         }
   
@@ -255,18 +245,12 @@
           background-color: #fbfaf5;
           height: 125px;
       }
-
-      .greyBG {
-        display: block;
-      }
   
       }
       /* ||||||||| end desktop queries ||||||||| */
       /* ||||||||||||||||||||||||||||||||||||||| */
   
   
-
-
   
   
       body {
@@ -473,17 +457,4 @@
 
   #home_p {
     display:inline-block;
-  }
-
-  .padLeft-3em {
-    padding-left: 3em;
-  }
-
-  .padTop-1em {
-    padding-top: 2em;
-  }
-
-  .greyBG {
-    background-color: #2f2f3308;
-    padding-bottom: 30px;
   }

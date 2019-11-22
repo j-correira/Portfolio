@@ -11,13 +11,89 @@
   <link href="https://fonts.googleapis.com/css?family=Signika&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="CoR.css">
 
+  <style>
+  .label:not(:last-child) {
+     margin-bottom: 0em;
+}
+
+.label {
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.input {
+    background-color: #fff;
+    border-color: #191918;
+    border-radius: 4px;
+    border-width: 2px;
+    color: #363636;
+}
+
+.textarea {
+    background-color: #fff;
+    border-color: #191918;
+    border-radius: 4px;
+    border-width: 2px;
+    color: #363636;
+}
+  </style>
+
+
 </head>
+
+
+
 
 <body>
 
 <div id="header">
+
+  <!-- |||||| burger menu ||||||| -->
   <span id="burger" style="font-size:50px; float:right; line-height: .3;  cursor:pointer" onclick="openNav()">&#9776;
   </span>
+
+  <!-- |||||||||||||||||||||||||| -->
+  <!-- |||||| desktop nav ||||||| -->
+  <section class="section" id="desktop_nav" style="padding-bottom: 0px;">
+    <div class="" id="content">
+
+      <div class="columns" style="width: 98%; margin: auto;">
+        <div class="column" id="" style="padding-top: 0px; padding-left: 1px; padding-right: 3px;">
+
+          <img id="header_logo" src="Images/ColorOfRhythm_Logo.png">
+
+          <a class="nav_links nav_active marginRight-20" href="CoR.html">Home</a>
+          <a class="nav_links marginRight-20 " href="about.html">About</a>
+          <a class="nav_links marginRight-20 " href="listen.html">Listen</a>
+          <a class="nav_links marginRight-20 " href="gallery.html">Gallery</a>
+          <a class="nav_links" href="contact.html">Contact</a>
+
+          <div class="has-text-centered" id="nav_social">
+            <a href=""><i style="width:.5em; padding-bottom: 10px;"
+                class="fab fa-spotify fa-2x navIcons marginRight-20"></i></a>
+            <a href=""><i style="width:.5em; padding-bottom: 10px;"
+                class="fab fa-instagram fa-2x navIcons marginRight-20"></i></a>
+            <a href=""><i style="width: .7em;; padding-bottom: 10px;"
+                class="fab fa-youtube fa-2x navIcons marginRight-20"></i></a>
+            <a href=""><i style="margin-right:0px; width:.5em; padding-bottom: 10px;"
+                class="fab fa-facebook-square fa-2x navIcons"></i></a>
+          </div>
+
+        </div>
+        <!-- /column two-thirds-->
+
+      </div>
+      <!-- /columns is mobile-->
+
+    </div>
+    <!-- /container-->
+
+  </section>
+  <!-- |||||| desktop nav ||||||| -->
+  <!-- |||||||||||||||||||||||||| -->
+
+
+  <!-- <hr id="nav_hr"> -->
 
   <img id="mobile_logo" src="Images/ColorOfRhythm_Logo.png">
 </div>
@@ -51,43 +127,7 @@
 
   <div id="overlay" onclick="closeNav()"></div>
 
-  <section class="section" id="desktop_nav" style="padding-bottom: 0px;">
-    <div class="" id="content">
-
-      <div class="columns" style="width: 98%; margin: auto;">
-        <div class="column" id="" style="padding-top: 0px; padding-left: 1px; padding-right: 3px;">
-
-          <img id="header_logo" src="Images/ColorOfRhythm_Logo.png">
-
-          <a class="marginRight-20 nav_active" href="#">Home</a>
-          <a class="nav_links marginRight-20 " href="#">About</a>
-          <a class="nav_links marginRight-20 " href="#">Listen</a>
-          <a class="nav_links marginRight-20 " href="#">Gallery</a>
-          <a class="nav_links" href="#">Contact</a>
-
-          <div class="has-text-centered" id="nav_social">
-            <a href=""><i style="width:.5em; padding-bottom: 10px;"
-                class="fab fa-spotify fa-2x navIcons marginRight-20"></i></a>
-            <a href=""><i style="width:.5em; padding-bottom: 10px;"
-                class="fab fa-instagram fa-2x navIcons marginRight-20"></i></a>
-            <a href=""><i style="width: .7em;; padding-bottom: 10px;"
-                class="fab fa-youtube fa-2x navIcons marginRight-20"></i></a>
-            <a href=""><i style="margin-right:0px; width:.5em; padding-bottom: 10px;"
-                class="fab fa-facebook-square fa-2x navIcons"></i></a>
-          </div>
-
-        </div>
-        <!-- /column two-thirds-->
-
-      </div>
-      <!-- /columns is mobile-->
-
-    </div>
-    <!-- /container-->
-
-  </section>
-
-  <hr id="nav_hr">
+  
 
 
 
@@ -95,47 +135,33 @@
 
 
 
-
-
-  <div class="columns" id="contentContainer">
-
+<div class="greyBG">
+<div class="container  padTop-1em" id="desktop_content">
+  <div class="columns" id="">
     <div id="mobile_content">
-
-      <div id="" class="column is-4" style="padding:0px;">
-        <img id="body_logo" src="Images/ColorOfRhythm_Logo.png">
-        <p id="body_paragraph">Sit amet dictum sit amet justo donec enim. Ornare suspendisse sed nisi lacus sed viverra
+      <div id="" class="column" style="padding:0px;">
+        <img id="" src="Images/ColorOfRhythm_Logo.png">
+        <p id="home_p">Sit amet dictum sit amet justo donec enim. Ornare suspendisse sed nisi lacus sed viverra
           tellus in. Eget mauris pharetra et ultrices neque ornare aenean euismod. Morbi quis commodo odio aenean sed.
         </p>
       </div>
-    </div>
+ </div>   
 
-    <div id="youtube" class="column is-8">
-      <style>
-        .embed-container {
-          position: relative;
-          padding-bottom: 56.25%;
-          height: 0;
-          overflow: hidden;
-          max-width: 100%;
-        }
-
-        .embed-container iframe,
-        .embed-container object,
-        .embed-container embed {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-        }
-      </style>
-      <div class='embed-container' id=""><iframe src='https://www.youtube.com/embed/s5CUX8pApd0' frameborder='0'
-          allowfullscreen></iframe></div>
+  <div class="column is-two-thirds padLeft-3em" >
+    <div id="youtube" class="" style=" margin-top: auto; margin-bottom: auto;">
+        <iframe  width="100%" height="386" src="https://www.youtube.com/embed/s5CUX8pApd0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
+  </div>
+
+
+
+
+
 
   </div>
   <!-- /columns -->
-
+</div>
+</div>
 
 
 
@@ -146,19 +172,42 @@
     <div class="column is-half">
       <div class="has-text-centered">
 
-        <h1 class="">listen</h1>
+        <h1 class="is-marginless">Listen</h1>
         <hr id="nav_hr">
 
-        <iframe src="https://open.spotify.com/embed/album/3dYxS8tP2MJa7V92xEDhwG" width="100%" height="210px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <div style="max-width: 545px; margin:auto;"><div style="left: 0; width: 100%; height: 377px; position: relative; padding-bottom: 0px; padding-top: 80px;"><iframe src="https://open.spotify.com/embed/track/1bFgR2SFJIUAYenrUAWs0I" style="border: 0; top: 0; left: 0; width: 100%; height: 377px; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div></div>
 
-        <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="250" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/flotian-ep/1318571636?app=music"></iframe>
+        <div class="columns">
+            
+            <div class="column is-half">
+               <a target="_blank" href="https://open.spotify.com/artist/4QuFb0T0DBjAQaSLqQXQeR"> <button class="button button-style is-medium is-fullwidth">Spotify</button> </a>
+            </div>
+        
+            <div class="column">
+                    <a target="_blank" href="https://itunes.apple.com/us/artist/color-of-rhythm/1316700467"> <button class="button button-style is-medium is-fullwidth">Apple Music</button> </a>
+            </div>
+        
+        </div>
+        
+        <div class="columns" >
+            <div class="column is-half" style="padding-top:0px;">
+                    <a target="_blank" href="https://play.google.com/store/music/album/Color_of_Rhythm_Flotian?id=Bbwfyrhng273fgm5wutpb4pugf4"> <button class="button button-style is-medium is-fullwidth">Google Play</button> </a>
+            </div>
+        
+            <div class="column" style="padding-top:0px;">
+                    <a target="_blank" href="https://www.amazon.com/gp/product/B077ST6MJD"> <button class="button button-style is-medium is-fullwidth">Amazon</button> </a>
+            </div>
+        </div>
+
       </div>
     </div>
 
     <div class="column is-half">
-        <div class="section-dark has-text-centered">
-          <h1 class="">Contact</h1>
+        <div class="has-text-centered">
+
+          <h1 class="is-marginless">Contact</h1>
           <hr class="margin-bottom30" id="nav_hr">
+
         </div>
 
 <div class="contact_form">
@@ -206,7 +255,7 @@
       </div>
     </div>
 
-        <button class="button is-medium is-fullwidth" style="font-family: 'Signika', sans-serif;">Send Email
+        <button class="button button-style is-medium is-fullwidth" style="font-family: 'Signika', sans-serif;">Send Email
         </button>
 
   </form>
@@ -226,12 +275,14 @@
 
 
 
+<div id="youtube_mobile" class="" style="height:300px; margin-top: auto; margin-bottom: auto;">
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/s5CUX8pApd0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
 
 
   <div id="content">
     <section class="section mobile_content" style="padding: 1rem 1.5rem;">
       <div class="container">
-
         <p>Sit amet dictum sit amet justo donec enim. Ornare suspendisse sed nisi lacus sed viverra tellus in. Eget
           mauris pharetra et ultrices neque ornare aenean euismod. Morbi quis commodo odio aenean sed.</p>
       </div>
@@ -239,8 +290,8 @@
 
     <section class="section mobile_content" style="padding: 0px 1.5rem;">
       <div class="container">
-        <button class="button is-large is-fullwidth button-style marginBottom-10">Listen</button>
-        <button class="button is-large is-fullwidth button-style">Contact</button>
+        <a href="listen.html"><button class="button is-large is-fullwidth button-style marginBottom-10">Listen</button></a>
+        <a href="contact.html"><button class="button is-large is-fullwidth button-style">Contact</button></a>
       </div>
     </section>
   </div>
